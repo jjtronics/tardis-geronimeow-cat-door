@@ -2,6 +2,13 @@
 
 *A 3D-printable TARDIS cat door* · **Français** · **[English below](#english-version)**
 
+[![Licence : CC BY-NC-SA 4.0](https://img.shields.io/badge/licence-CC%20BY--NC--SA%204.0-lightgrey)](LICENSE.md)
+[![Code : MIT](https://img.shields.io/badge/code-MIT-blue)](LICENSE-CODE)
+[![Version](https://img.shields.io/badge/version-V8-123A63)](../../releases/latest)
+[![État : prototype non imprimé](https://img.shields.io/badge/%C3%A9tat-prototype%20non%20imprim%C3%A9-orange)](#version-française)
+[![Creality Print 7.3.1](https://img.shields.io/badge/Creality%20Print-7.3.1-2bb24c)](docs/GUIDE_CREALITY_PRINT.md)
+[![ESPHome](https://img.shields.io/badge/ESPHome-ready-000000)](tardis_v8/esphome/)
+
 ![TARDIS Geronimeow — plus grande à l'intérieur… pour les chats](docs/images/couverture_fr.jpg)
 
 ## Sommaire / Contents
@@ -82,8 +89,8 @@ Creality K1 Max avec CFS) et fournie en projets Creality Print prêts à tranche
 
 ### Ce qu'il faut
 
-- Une imprimante **4 couleurs** (ou des changements de filament à la main), avec un
-  plateau d'au moins **285 × 252 mm** pour les façades. Les projets 3MF visent une
+- Une imprimante **4 couleurs** (ou monocouleur et un peu de peinture, voir la
+  [FAQ](#faq)), avec un plateau d'au moins **285 × 252 mm** pour les façades. Les projets 3MF visent une
   **Creality K1 Max** avec **Creality Print 7.3.1** ; les STL servent aux autres
   logiciels.
 - Environ **880 g de PLA** (surtout bleu) et un peu de TPU pour les butées.
@@ -246,8 +253,9 @@ CFS) and ships as ready-to-slice Creality Print projects.
 
 ### What you need
 
-- A printer able to do **4 colours** (or swap filament by hand) with a bed of at least
-  **285 × 252 mm** for the fronts. The 3MF projects target a **Creality K1 Max** with
+- A **4-colour** printer (or a single-colour one and a little paint, see the
+  [FAQ](#frequently-asked-questions)) with a bed of at least **285 × 252 mm** for the
+  fronts. The 3MF projects target a **Creality K1 Max** with
   **Creality Print 7.3.1**; STL files are provided for other slicers.
 - About **880 g of PLA** (mostly blue) and a little TPU for the soft stops.
 - Hardware: 3 mm steel rods, clips, Ø6 mm magnets, M3 and M4 screws. See the
@@ -268,8 +276,8 @@ CFS) and ships as ready-to-slice Creality Print projects.
    the fits, pick the cam that gives the return force you like and set the magnets.
 3. Print the remaining plates from [`tardis_v8/3mf/`](tardis_v8/3mf/), following the
    [step-by-step Creality Print guide](docs/en/CREALITY_PRINT_GUIDE.md).
-4. Cut the door with the template, then assemble.
-   [Printing and assembly guide](docs/en/PRINTING_AND_ASSEMBLY.md).
+4. Cut the door with the template, then assemble: see the
+   [printing and assembly guide](docs/en/PRINTING_AND_ASSEMBLY.md).
 5. Run at least **50 open/close cycles by hand**, in both modes, before leaving your
    cat alone with it.
 

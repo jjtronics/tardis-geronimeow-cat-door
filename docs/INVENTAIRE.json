@@ -3,7 +3,7 @@
   "repository": "jjtronics/tardis-geronimeow-cat-door",
   "current_version": "V8",
   "file_count": 204,
-  "total_bytes": 90944157,
+  "total_bytes": 90944839,
   "excluded_generated_directories": [
     "montage_frames",
     "montage_legende",
@@ -65,8 +65,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 17156,
-      "sha256": "c42b58c989c4d0e5b6e5b4a7e8df27303844194c45b7aff52ccb44ac928da447"
+      "bytes": 17838,
+      "sha256": "69512240f24afa3ced37053b4589314227f89e68012e54eff6a1d4ddf45ecac6"
     },
     {
       "path": "docs/CONCEPTION.md",
