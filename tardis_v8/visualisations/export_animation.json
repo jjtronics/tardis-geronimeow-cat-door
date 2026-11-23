@@ -1,0 +1,27 @@
+{
+  "fps": 15,
+  "frame_count": 1170,
+  "duration_seconds": 78.0,
+  "width": 1280,
+  "height": 720,
+  "mp4": "montage_complet_V8.mp4",
+  "gif": "montage_complet_V8.gif",
+  "steps": [
+    "Chatière TARDIS · V8",
+    "Les pièces",
+    "Les cames réglables",
+    "Les battants et leurs axes",
+    "Aimants anti-vent",
+    "Capteur de passage",
+    "Les lanternes",
+    "Câbles dans les façades",
+    "Berceau de l’ESP32",
+    "Tunnel, porte et façade arrière",
+    "Vis, caches et butées",
+    "Verrou central : FERMÉ",
+    "Verrou central : LIBRE",
+    "Passage détecté",
+    "Retour par gravité",
+    "Éclairage RGB"
+  ]
+}

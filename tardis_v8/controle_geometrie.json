@@ -1,0 +1,199 @@
+{
+  "closed_assembly_overlaps": [],
+  "angles_degrees": [
+    -80,
+    -75,
+    -70,
+    -65,
+    -60,
+    -55,
+    -50,
+    -45,
+    -40,
+    -35,
+    -30,
+    -25,
+    -20,
+    -15,
+    -10,
+    -5,
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80
+  ],
+  "cam_rises": [
+    3.5,
+    4.5,
+    5.5
+  ],
+  "motion_collisions": [],
+  "central_lock": {
+    "free_top_z": -0.5,
+    "locked_top_z": 5.0,
+    "leaf_bottom_z": 1.0,
+    "engagement_mm": 4.0,
+    "free_clears_leaves": true
+  },
+  "locked_at_rest": [
+    {
+      "side": -1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "side": 1,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "central_lock_blocks_both_directions": [
+    {
+      "side": -1,
+      "direction": -1,
+      "blocks_motion": true,
+      "blocked_at_deg": -0.5
+    },
+    {
+      "side": 1,
+      "direction": -1,
+      "blocks_motion": true,
+      "blocked_at_deg": -0.5
+    },
+    {
+      "side": -1,
+      "direction": 1,
+      "blocks_motion": true,
+      "blocked_at_deg": 0.5
+    },
+    {
+      "side": 1,
+      "direction": 1,
+      "blocks_motion": true,
+      "blocked_at_deg": 0.5
+    }
+  ],
+  "turnstile": {
+    "knob_bottom_z": -10.5,
+    "arm_top_z": -10.5,
+    "gap_mm": 0.0,
+    "overlap_mm3": 0.0,
+    "supports_knob": true,
+    "open_clears_knob": true,
+    "open_top_z": -1.0
+  },
+  "soft_stop_contacts": [
+    {
+      "side": -1,
+      "angle": -85,
+      "contacts_tpu": true,
+      "volume_mm3": 1.4999
+    },
+    {
+      "side": 1,
+      "angle": -85,
+      "contacts_tpu": true,
+      "volume_mm3": 1.4999
+    },
+    {
+      "side": -1,
+      "angle": 85,
+      "contacts_tpu": true,
+      "volume_mm3": 0.3657
+    },
+    {
+      "side": 1,
+      "angle": 85,
+      "contacts_tpu": true,
+      "volume_mm3": 0.3656
+    }
+  ],
+  "magnets": [
+    {
+      "side": -1,
+      "anti_vent_gap_mm": 4.0,
+      "anti_vent_gap_range_mm": [
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "capteur_distance_mm": 9.0
+    },
+    {
+      "side": 1,
+      "anti_vent_gap_mm": 4.0,
+      "anti_vent_gap_range_mm": [
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "capteur_distance_mm": 9.0
+    }
+  ],
+  "mode_truth_table": [
+    {
+      "mode": "LIBRE",
+      "entree": true,
+      "sortie": true,
+      "verrou_central": false
+    },
+    {
+      "mode": "FERME",
+      "entree": false,
+      "sortie": false,
+      "verrou_central": true
+    }
+  ],
+  "gravity_cam": {
+    "rises_mm": [
+      3.5,
+      4.5,
+      5.5
+    ],
+    "nominal_mm": 4.5,
+    "gap_mm": 0.3,
+    "lift_at_stop_mm": {
+      "3.5": 3.31,
+      "4.5": 4.25,
+      "5.5": 5.19
+    },
+    "axes": [
+      {
+        "name": "METAL_axe_droite_bas",
+        "length_mm": 39.4,
+        "clip_spacing_mm": 38.1
+      },
+      {
+        "name": "METAL_axe_droite_haut",
+        "length_mm": 24.3,
+        "clip_spacing_mm": 23.0
+      },
+      {
+        "name": "METAL_axe_gauche_bas",
+        "length_mm": 39.4,
+        "clip_spacing_mm": 38.1
+      },
+      {
+        "name": "METAL_axe_gauche_haut",
+        "length_mm": 24.3,
+        "clip_spacing_mm": 23.0
+      }
+    ]
+  },
+  "limitations": "Positions discretes et volumes rigides nominaux. Couple de rappel, frottement de la came, force des aimants, seuil des ILS, TPU, fatigue et force du chat exigent un prototype physique."
+}

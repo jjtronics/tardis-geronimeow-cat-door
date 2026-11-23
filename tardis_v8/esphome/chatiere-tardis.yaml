@@ -1,0 +1,159 @@
+# Chatière TARDIS V8 : lanternes RGB et capteur de passage (ESPHome).
+#
+# Carte : ESP32-C3 SuperMini, logée dans le berceau sous le tunnel.
+#   GPIO 3 : données de la lanterne avant  (WS2812B 5 mm, via 330 ohms)
+#   GPIO 4 : données de la lanterne arrière (WS2812B 5 mm, via 330 ohms)
+#   GPIO 5 : boucle des deux ILS en série vers la masse (rappel interne)
+#
+# Installation : copier ce fichier dans ESPHome (module Home Assistant ou
+# « pip install esphome »), créer secrets.yaml avec wifi_ssid et wifi_password,
+# puis « esphome run chatiere-tardis.yaml », carte branchée en USB.
+
+substitutions:
+  nom: chatiere-tardis
+
+esphome:
+  name: ${nom}
+  friendly_name: Chatière TARDIS
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+
+logger:
+
+api:
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Chatiere-TARDIS"
+
+captive_portal:
+
+globals:
+  - id: nb_passages
+    type: int
+    restore_value: true
+    initial_value: "0"
+
+light:
+  - platform: esp32_rmt_led_strip
+    id: lanterne_avant
+    name: "Lanterne avant"
+    pin: GPIO3
+    num_leds: 1
+    chipset: WS2812
+    rgb_order: GRB
+    effects:
+      - pulse:
+          name: "Respiration"
+      - pulse:
+          name: "Gyrophare"
+          transition_length: 0.25s
+          update_interval: 0.5s
+      - strobe:
+          name: "Flash"
+      - flicker:
+          name: "Bougie"
+      - random:
+          name: "Couleurs"
+          transition_length: 2s
+          update_interval: 3s
+  - platform: esp32_rmt_led_strip
+    id: lanterne_arriere
+    name: "Lanterne arrière"
+    pin: GPIO4
+    num_leds: 1
+    chipset: WS2812
+    rgb_order: GRB
+    effects:
+      - pulse:
+          name: "Respiration"
+      - pulse:
+          name: "Gyrophare"
+          transition_length: 0.25s
+          update_interval: 0.5s
+      - strobe:
+          name: "Flash"
+      - flicker:
+          name: "Bougie"
+      - random:
+          name: "Couleurs"
+          transition_length: 2s
+          update_interval: 3s
+
+binary_sensor:
+  # ILS fermés (battants au repos) : entrée à la masse. Un battant s'ouvre :
+  # la boucle s'ouvre, l'entrée remonte, le passage est signalé.
+  - platform: gpio
+    id: passage
+    name: "Passage du chat"
+    device_class: opening
+    pin:
+      number: GPIO5
+      mode:
+        input: true
+        pullup: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 1s
+    on_press:
+      - lambda: "id(nb_passages) += 1;"
+      - component.update: compteur
+      - if:
+          condition:
+            switch.is_on: flash_passage
+          then:
+            - script.execute: flash
+
+sensor:
+  - platform: template
+    id: compteur
+    name: "Passages"
+    icon: mdi:cat
+    accuracy_decimals: 0
+    state_class: total_increasing
+    update_interval: 60s
+    lambda: "return id(nb_passages);"
+
+switch:
+  - platform: template
+    id: flash_passage
+    name: "Flash au passage"
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+
+button:
+  - platform: template
+    name: "Remettre le compteur à zéro"
+    on_press:
+      - lambda: "id(nb_passages) = 0;"
+      - component.update: compteur
+
+script:
+  # Flash de 3 s : lanternes allumées, elles reprennent leur couleur ;
+  # éteintes, elles flashent en blanc puis s'éteignent.
+  - id: flash
+    mode: restart
+    then:
+      - if:
+          condition:
+            light.is_on: lanterne_avant
+          then:
+            - light.turn_on: {id: lanterne_avant, effect: "Flash"}
+            - light.turn_on: {id: lanterne_arriere, effect: "Flash"}
+            - delay: 3s
+            - light.turn_on: {id: lanterne_avant, effect: "None"}
+            - light.turn_on: {id: lanterne_arriere, effect: "None"}
+          else:
+            - light.turn_on: {id: lanterne_avant, red: 100%, green: 100%, blue: 100%, brightness: 100%, effect: "Flash"}
+            - light.turn_on: {id: lanterne_arriere, red: 100%, green: 100%, blue: 100%, brightness: 100%, effect: "Flash"}
+            - delay: 3s
+            - light.turn_off: lanterne_avant
+            - light.turn_off: lanterne_arriere

@@ -1,0 +1,23 @@
+name: Problème / Problem
+description: Avertissement du slicer, pièce qui ne s'assemble pas, erreur de doc / Slicer warning, part that does not fit, doc mistake
+title: "[Problème / Problem] "
+labels: ["problème"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Fichier, plateau ou page / File, plate or page
+      placeholder: "tardis_v8/3mf/04_Facade_avant.3mf"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Ce qui se passe / What happens
+      description: Message exact, capture d'écran, étapes pour reproduire. / Exact message, screenshot, steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ce qui était attendu / What you expected

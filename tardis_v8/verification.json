@@ -1,0 +1,939 @@
+{
+  "parameters": {
+    "opening_width": 190.0,
+    "opening_height": 200.0,
+    "door_depth": 40.0,
+    "tunnel_wall": 2.4,
+    "pivot_hole": 3.4,
+    "center_gap": 2.4,
+    "cam_rise": 4.5,
+    "cam_rises": [
+      3.5,
+      4.5,
+      5.5
+    ],
+    "cam_ref": 60.0,
+    "cam_z_ref": 45.0,
+    "cam_gap": 0.3,
+    "leaf_top_cut": 5.0,
+    "lock_width": 10.0,
+    "lock_thickness": 4.0,
+    "lock_y": -5.0,
+    "lock_engage": 4.0,
+    "lock_length": 15.0,
+    "magnet_d": 6.0,
+    "magnet_h": 2.0,
+    "magnet_x": 20.0,
+    "sill_pocket": 6.0,
+    "shims_nominal": 1,
+    "sensor_magnet_h": 3.0,
+    "reed_length": 14.0,
+    "reed_d": 2.2,
+    "groove_width": 4.5,
+    "groove_depth": 2.5,
+    "esp_box_width": 34.0,
+    "esp_box_height": 10.3,
+    "esp_board_width": 18.4,
+    "usb_window": [
+      13.0,
+      7.5
+    ],
+    "free_swing_angle": 80.0,
+    "stop_angle": 85.0,
+    "preview_angle": 62.0,
+    "fit_clearance": 0.25,
+    "glue_gap": 0.1,
+    "swing_clearance": 0.4,
+    "bed_width": 300.0,
+    "bed_depth": 295.0,
+    "bed_margin": 8.0,
+    "part_gap": 8.0,
+    "tower_x": 60.0,
+    "tower_y": 257.0,
+    "tower_depth": 28.0,
+    "tower_brim": 3.0,
+    "template_thickness": 3.0,
+    "door_cut_clearance": 0.7,
+    "esp_notch": [
+      36.0,
+      11.0
+    ]
+  },
+  "palette": [
+    {
+      "slot": 1,
+      "name": "01_BLEU_TARDIS",
+      "hex": "#123A63"
+    },
+    {
+      "slot": 2,
+      "name": "02_IVOIRE",
+      "hex": "#F4E6C8"
+    },
+    {
+      "slot": 3,
+      "name": "03_NOIR",
+      "hex": "#161B23"
+    },
+    {
+      "slot": 4,
+      "name": "04_LAITON",
+      "hex": "#BD9452"
+    }
+  ],
+  "parts": [
+    {
+      "name": "cadre_monobloc_moulure",
+      "group": "01_Cadre",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 457049.687
+    },
+    {
+      "name": "enseigne_noire",
+      "group": "01_Cadre",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 13914.713
+    },
+    {
+      "name": "lettrage_enseigne_ivoire",
+      "group": "01_Cadre",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 213.764
+    },
+    {
+      "name": "cache_vis_-1_30",
+      "group": "07_Caches_vis",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 133.887
+    },
+    {
+      "name": "cache_vis_-1_176.0",
+      "group": "07_Caches_vis",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 133.887
+    },
+    {
+      "name": "cache_vis_1_30",
+      "group": "07_Caches_vis",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 133.887
+    },
+    {
+      "name": "cache_vis_1_176.0",
+      "group": "07_Caches_vis",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 133.887
+    },
+    {
+      "name": "tunnel_exterieur",
+      "group": "05_Tunnel",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 70116.525
+    },
+    {
+      "name": "filet_recentreur_ivoire",
+      "group": "05_Tunnel",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 5685.124
+    },
+    {
+      "name": "berceau_ESP",
+      "group": "26_Berceau_ESP",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 4123.442
+    },
+    {
+      "name": "butee_TPU_avant_gauche",
+      "group": "23_Butees_TPU",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 36.713
+    },
+    {
+      "name": "butee_TPU_arriere_gauche",
+      "group": "23_Butees_TPU",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 81.136
+    },
+    {
+      "name": "butee_TPU_avant_droite",
+      "group": "23_Butees_TPU",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 36.713
+    },
+    {
+      "name": "butee_TPU_arriere_droite",
+      "group": "23_Butees_TPU",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 81.136
+    },
+    {
+      "name": "base_lanterne",
+      "group": "08_Base_lanterne",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 2991.584
+    },
+    {
+      "name": "diffuseur_ivoire",
+      "group": "09_Diffuseur",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 1225.512
+    },
+    {
+      "name": "cage_chapeau_lanterne",
+      "group": "10_Cage_lanterne",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 1503.284
+    },
+    {
+      "name": "cadre_arriere_tardis",
+      "group": "06_Facade_arriere",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 456339.815
+    },
+    {
+      "name": "enseigne_noire_arriere",
+      "group": "06_Facade_arriere",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 13914.713
+    },
+    {
+      "name": "lettrage_enseigne_ivoire_arriere",
+      "group": "06_Facade_arriere",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 213.764
+    },
+    {
+      "name": "base_lanterne_arriere",
+      "group": "18_Base_lanterne_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 2991.584
+    },
+    {
+      "name": "diffuseur_ivoire_arriere",
+      "group": "19_Diffuseur_AR",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 1225.512
+    },
+    {
+      "name": "cage_chapeau_lanterne_arriere",
+      "group": "20_Cage_lanterne_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 1503.284
+    },
+    {
+      "name": "cache_vis_-1_30_arriere",
+      "group": "16_Caches_vis_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 110.502
+    },
+    {
+      "name": "cache_vis_-1_176.0_arriere",
+      "group": "16_Caches_vis_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 110.502
+    },
+    {
+      "name": "cache_vis_1_30_arriere",
+      "group": "16_Caches_vis_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 110.502
+    },
+    {
+      "name": "cache_vis_1_176.0_arriere",
+      "group": "16_Caches_vis_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 110.502
+    },
+    {
+      "name": "battant_gauche_avant",
+      "group": "02_Battant_gauche_AV",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 49825.324
+    },
+    {
+      "name": "vitre_ivoire_gauche",
+      "group": "02_Battant_gauche_AV",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 6327.464
+    },
+    {
+      "name": "bouton_laiton_gauche",
+      "group": "02_Battant_gauche_AV",
+      "filament": 4,
+      "non_manifold_edges": 0,
+      "volume_mm3": 196.215
+    },
+    {
+      "name": "plaque_telephone",
+      "group": "02_Battant_gauche_AV",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 4094.721
+    },
+    {
+      "name": "texte_plaque_noir",
+      "group": "02_Battant_gauche_AV",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.714
+    },
+    {
+      "name": "pion_gauche_74",
+      "group": "22_Pions_battants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 9.41
+    },
+    {
+      "name": "pion_gauche_182",
+      "group": "22_Pions_battants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 9.41
+    },
+    {
+      "name": "pion_droit_74",
+      "group": "22_Pions_battants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 9.41
+    },
+    {
+      "name": "pion_droit_182",
+      "group": "22_Pions_battants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 9.41
+    },
+    {
+      "name": "prototype_battant_gauche_avant_75mm",
+      "group": "25_Prototype_battants_75mm",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 20017.062
+    },
+    {
+      "name": "prototype_battant_gauche_arriere_75mm",
+      "group": "25_Prototype_battants_75mm",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 19901.318
+    },
+    {
+      "name": "prototype_battant_droit_avant_75mm",
+      "group": "25_Prototype_battants_75mm",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 20017.062
+    },
+    {
+      "name": "prototype_battant_droit_arriere_75mm",
+      "group": "25_Prototype_battants_75mm",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 19901.329
+    },
+    {
+      "name": "battant_gauche_arriere",
+      "group": "14_Battant_gauche_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 49533.611
+    },
+    {
+      "name": "vitre_ivoire_droit_dos",
+      "group": "14_Battant_gauche_AR",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 6327.464
+    },
+    {
+      "name": "bouton_laiton_droit_dos",
+      "group": "14_Battant_gauche_AR",
+      "filament": 4,
+      "non_manifold_edges": 0,
+      "volume_mm3": 196.215
+    },
+    {
+      "name": "medaillon_ivoire_dos",
+      "group": "14_Battant_gauche_AR",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 546.0
+    },
+    {
+      "name": "croix_medallion_dos",
+      "group": "14_Battant_gauche_AR",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 15.744
+    },
+    {
+      "name": "battant_droit_avant",
+      "group": "03_Battant_droit_AV",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 49825.324
+    },
+    {
+      "name": "vitre_ivoire_droit",
+      "group": "03_Battant_droit_AV",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 6327.464
+    },
+    {
+      "name": "bouton_laiton_droit",
+      "group": "03_Battant_droit_AV",
+      "filament": 4,
+      "non_manifold_edges": 0,
+      "volume_mm3": 196.215
+    },
+    {
+      "name": "medaillon_ivoire",
+      "group": "03_Battant_droit_AV",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 546.0
+    },
+    {
+      "name": "croix_medallion",
+      "group": "03_Battant_droit_AV",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 15.744
+    },
+    {
+      "name": "battant_droit_arriere",
+      "group": "15_Battant_droit_AR",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 48425.106
+    },
+    {
+      "name": "vitre_ivoire_gauche_dos",
+      "group": "15_Battant_droit_AR",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 6327.464
+    },
+    {
+      "name": "bouton_laiton_gauche_dos",
+      "group": "15_Battant_droit_AR",
+      "filament": 4,
+      "non_manifold_edges": 0,
+      "volume_mm3": 196.215
+    },
+    {
+      "name": "plaque_telephone_dos",
+      "group": "15_Battant_droit_AR",
+      "filament": 2,
+      "non_manifold_edges": 0,
+      "volume_mm3": 4094.721
+    },
+    {
+      "name": "texte_plaque_noir_dos",
+      "group": "15_Battant_droit_AR",
+      "filament": 3,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.714
+    },
+    {
+      "name": "lame_verrou_central",
+      "group": "12_Verrou_central",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 570.324
+    },
+    {
+      "name": "bouton_verrou_central",
+      "group": "12_Verrou_central",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 139.138
+    },
+    {
+      "name": "tourniquet_verrou",
+      "group": "12_Verrou_central",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 80.668
+    },
+    {
+      "name": "came_rapportee_3,5_gauche",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 342.951
+    },
+    {
+      "name": "came_rapportee_3,5_droite",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 342.951
+    },
+    {
+      "name": "came_rapportee_4,5_gauche",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 357.657
+    },
+    {
+      "name": "came_rapportee_4,5_droite",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 357.657
+    },
+    {
+      "name": "came_rapportee_5,5_gauche",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 372.685
+    },
+    {
+      "name": "came_rapportee_5,5_droite",
+      "group": "29_Cames_rapportees",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 372.685
+    },
+    {
+      "name": "cale_aimant_gauche_1",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_gauche_2",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_gauche_3",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_gauche_4",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_droite_1",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_droite_2",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_droite_3",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "cale_aimant_droite_4",
+      "group": "28_Cales_aimants",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 26.378
+    },
+    {
+      "name": "eprouvette_jeux",
+      "group": "00_Eprouvette_jeux",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 14725.225
+    },
+    {
+      "name": "eprouvette_verrou_et_cle",
+      "group": "00_Eprouvette_jeux",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 7305.076
+    },
+    {
+      "name": "gabarit_decoupe_porte",
+      "group": "27_Gabarit_porte",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 46943.688
+    },
+    {
+      "name": "prototype_cadre_bas_75mm",
+      "group": "24_Prototype_cadre_bas",
+      "filament": 1,
+      "non_manifold_edges": 0,
+      "volume_mm3": 115333.896
+    }
+  ],
+  "plates": [
+    {
+      "file": "00_Eprouvette_jeux.3mf",
+      "title": "Eprouvette de jeux (a imprimer en premier)",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        98.0,
+        35.0
+      ],
+      "height": 12.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 2,
+      "items": 1
+    },
+    {
+      "file": "01_Prototype_mecanique_75mm.3mf",
+      "title": "Prototype 1:1 : cadre bas et battants de 75 mm",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        252.0,
+        263.0
+      ],
+      "height": 19.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 7,
+      "items": 5
+    },
+    {
+      "file": "02_Battant_gauche.3mf",
+      "title": "Battant gauche : demi-coque avant, demi-coque arriere, 2 pions",
+      "multicolor": true,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 253.0,
+      "rotated_90": false,
+      "extent_xy": [
+        229.5,
+        201.0
+      ],
+      "height": 10.95,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parts": 12,
+      "items": 4
+    },
+    {
+      "file": "03_Battant_droit.3mf",
+      "title": "Battant droit : demi-coque avant, demi-coque arriere, 2 pions",
+      "multicolor": true,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 253.0,
+      "rotated_90": false,
+      "extent_xy": [
+        229.5,
+        201.0
+      ],
+      "height": 10.95,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "parts": 12,
+      "items": 4
+    },
+    {
+      "file": "04_Facade_avant.3mf",
+      "title": "Facade avant avec enseigne POLICE BOX",
+      "multicolor": true,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 253.0,
+      "rotated_90": true,
+      "extent_xy": [
+        285.0,
+        252.0
+      ],
+      "height": 21.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1,
+        2,
+        3
+      ],
+      "parts": 7,
+      "items": 1
+    },
+    {
+      "file": "05_Facade_arriere.3mf",
+      "title": "Facade arriere avec enseigne",
+      "multicolor": true,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 253.0,
+      "rotated_90": true,
+      "extent_xy": [
+        285.0,
+        252.0
+      ],
+      "height": 21.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1,
+        2,
+        3
+      ],
+      "parts": 3,
+      "items": 1
+    },
+    {
+      "file": "06_Tunnel.3mf",
+      "title": "Tunnel",
+      "multicolor": true,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 253.0,
+      "rotated_90": false,
+      "extent_xy": [
+        202.8,
+        212.8
+      ],
+      "height": 40.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1,
+        2
+      ],
+      "parts": 2,
+      "items": 1
+    },
+    {
+      "file": "07_Petites_pieces_bleu.3mf",
+      "title": "Petites pieces bleues : 8 caches, verrou central, berceau ESP, 8 cales, 2 bases et 2 cages de lanterne",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        285.7,
+        67.3
+      ],
+      "height": 30.5,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 24,
+      "items": 24
+    },
+    {
+      "file": "08_Diffuseurs_ivoire.3mf",
+      "title": "Deux diffuseurs de lanterne",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        55.5,
+        26.5
+      ],
+      "height": 22.0,
+      "min_xy": [
+        10.5,
+        10.5
+      ],
+      "filaments": [
+        2
+      ],
+      "parts": 2,
+      "items": 2
+    },
+    {
+      "file": "09_Butees_TPU.3mf",
+      "title": "Quatre butees souples (TPU, bobine externe)",
+      "multicolor": false,
+      "tpu": true,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        81.5,
+        15.5
+      ],
+      "height": 2.2,
+      "min_xy": [
+        10.5,
+        10.5
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 4,
+      "items": 4
+    },
+    {
+      "file": "10_Cames_reglables.3mf",
+      "title": "Cames rapportees : 2 x 3,5 / 4,5 / 5,5 mm, couches de 0,1 mm",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        125.9,
+        18.9
+      ],
+      "height": 14.33,
+      "min_xy": [
+        10.5,
+        10.5
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 6,
+      "items": 6
+    },
+    {
+      "file": "11_Gabarit_porte.3mf",
+      "title": "Gabarit de decoupe et de percage de la porte",
+      "multicolor": false,
+      "tpu": false,
+      "bed_fit": true,
+      "x_limit": 292.0,
+      "y_limit": 287.0,
+      "rotated_90": false,
+      "extent_xy": [
+        242.0,
+        250.2
+      ],
+      "height": 3.0,
+      "min_xy": [
+        8.0,
+        8.0
+      ],
+      "filaments": [
+        1
+      ],
+      "parts": 1,
+      "items": 1
+    }
+  ],
+  "cam_envelope": [
+    {
+      "rise_mm": 3.5,
+      "min_gap_mm": 0.3,
+      "touches": true,
+      "lift_at_stop_mm": 3.31
+    },
+    {
+      "rise_mm": 4.5,
+      "min_gap_mm": 0.3,
+      "touches": true,
+      "lift_at_stop_mm": 4.25
+    },
+    {
+      "rise_mm": 5.5,
+      "min_gap_mm": 0.3,
+      "touches": true,
+      "lift_at_stop_mm": 5.19
+    }
+  ]
+}

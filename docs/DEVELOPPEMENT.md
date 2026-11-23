@@ -1,0 +1,109 @@
+# Régénérer et maintenir le projet — V8
+
+## Outils
+
+| Outil | Version utilisée |
+| --- | --- |
+| Blender | 5.0.1, application macOS |
+| Creality Print | 7.3.1 (ouverture et tranchage, interface et ligne de commande) |
+| lib3mf, Pillow | voir `requirements-tools.txt` |
+| FFmpeg | 8.1 |
+| ESPHome | 2025.5 (validation de la configuration uniquement) |
+
+Les générateurs Blender utilisent `bpy`, `bmesh` et `mathutils`, fournis par Blender.
+Les autres scripts utilisent Python avec les dépendances de `requirements-tools.txt` :
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-tools.txt
+```
+
+FFmpeg doit être dans le `PATH`. Sous macOS, Blender est appelé par
+`/Applications/Blender.app/Contents/MacOS/Blender`, et Creality Print est cherché dans
+`/Applications/Creality Print.app`. Les scripts chargent Arial depuis les polices
+système macOS. Adapter ces chemins sur un autre système.
+
+## Modèle et plateaux
+
+Depuis la racine du dépôt :
+
+```sh
+/Applications/Blender.app/Contents/MacOS/Blender --background --python tardis_v8/generate.py
+```
+
+`generate.py` écrit les STL, les 12 plateaux 3MF (déjà convertis en projets Creality
+Print), l'assemblage de référence, `verification.json` (avec le contrôle de
+l'enveloppe des cames), le modèle Blender et trois rendus. Ajouter
+`-- --no-render` pour sauter les rendus. Les paramètres sont en tête du fichier :
+épaisseur de porte, pentes des cames, verrou, aimants, capteur, rainures, gabarit.
+
+La conversion en projet Creality Print se fait par `scripts/exporter_projets_creality.py`,
+appelé par le générateur. Elle reprend les réglages des modèles de
+`scripts/modeles_creality/`, puis y ajoute la tour de purge, les couleurs et les
+réglages par objet du fichier généré.
+
+## Contrôles
+
+```sh
+/Applications/Blender.app/Contents/MacOS/Blender --background --python tardis_v8/verify_geometry.py
+.venv/bin/python tardis_v8/verify_3mf.py
+python3 scripts/trancher_creality_print.py tardis_v8
+python3 scripts/audit_tours.py
+```
+
+- `verify_geometry.py` : montage fermé, débattement pour les trois cames, butées,
+  verrou (balayage fin), tourniquet, aimants. Résultat dans `controle_geometrie.json`.
+- `verify_3mf.py` : lecture indépendante des 3MF par lib3mf (`controle_3mf.json`).
+- `trancher_creality_print.py` : tranchage de chaque plateau par Creality Print en ligne
+  de commande (`controle_tranchage.json` : temps, masse, couleurs, conflits).
+- `audit_tours.py` : tout le dépôt, projets natifs et tour de purge hors des pièces.
+
+Blender peut renvoyer un code nul même si son script lève une exception : lire aussi
+les rapports JSON et la sortie. L'ouverture et le tranchage dans l'interface de
+Creality Print se vérifient à la main, plateau par plateau.
+
+## Figures et vidéo
+
+```sh
+/Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/vignettes_plateaux.py -- tardis_v8
+.venv/bin/python scripts/planche_plateaux.py tardis_v8
+/Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/render_came.py -- tardis_v8
+.venv/bin/python scripts/planche_came.py tardis_v8
+/Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/render_details_v8.py -- tardis_v8
+.venv/bin/python scripts/planche_details_v8.py tardis_v8
+/Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/render_cablage.py -- tardis_v8
+.venv/bin/python scripts/planche_cablage.py tardis_v8
+.venv/bin/python scripts/schema_eclairage.py tardis_v8
+.venv/bin/python scripts/figure_gabarit.py tardis_v8
+/Applications/Blender.app/Contents/MacOS/Blender --background --python tardis_v8/visualisations/render_visuals.py -- montage
+python3 tardis_v8/visualisations/compose_montage.py
+```
+
+La vidéo (78 s, 1280 × 720) est rendue image par image dans EEVEE. `render_visuals.py`
+enregistre pour chaque image la position à l'écran des pièces étiquetées ;
+`compose_montage.py` ajoute titres, textes et étiquettes, puis encode le MP4 et le GIF.
+`-- test` rend quatorze images de contrôle.
+
+Les captures du guide Creality Print sont faites à la main dans l'interface, puis
+annotées.
+
+## ESPHome
+
+```sh
+pip install esphome
+esphome config tardis_v8/esphome/chatiere-tardis.yaml   # avec un secrets.yaml à côté
+```
+
+## Gestion des fichiers
+
+Le dépôt ne contient que la V8 ; les itérations précédentes sont racontées dans
+[HISTORIQUE.md](HISTORIQUE.md).
+Git ignore les images intermédiaires (`montage_frames/`, `montage_legende/`), les
+sauvegardes `.blend1`, les journaux et les caches. Les modèles Blender, STL, 3MF,
+rendus, GIF et MP4 sont versionnés.
+
+Après une régénération, actualiser l'inventaire SHA-256 :
+
+```sh
+python3 scripts/update_inventory.py
+```

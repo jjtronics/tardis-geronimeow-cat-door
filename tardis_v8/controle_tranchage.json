@@ -1,0 +1,485 @@
+{
+ "outil": "Creality Print 7.3.1.6378 en ligne de commande (--cli), reglages du projet, verification des conflits G-code activee",
+ "plates": [
+  {
+   "plate": "00_Eprouvette_jeux",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 60,
+   "time": "20m 16s",
+   "grams_per_filament": [
+    11.52,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 11.5,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [
+    8.5,
+    8.2,
+    97.4,
+    31.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "01_Prototype_mecanique_75mm",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 95,
+   "time": "3h 3m 3s",
+   "grams_per_filament": [
+    117.63,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 117.6,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    251.1,
+    262.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "02_Battant_gauche",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "60"
+    ],
+    [
+     "257"
+    ]
+   ],
+   "layers": 55,
+   "time": "5h 36m 32s",
+   "grams_per_filament": [
+    89.8,
+    23.5,
+    2.63,
+    13.46
+   ],
+   "grams": 129.4,
+   "color_changes": 43,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "slots_used": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "part_xy": [
+    11.4,
+    8.2,
+    201.8,
+    200.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "03_Battant_droit",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "60"
+    ],
+    [
+     "257"
+    ]
+   ],
+   "layers": 55,
+   "time": "5h 31m 57s",
+   "grams_per_filament": [
+    89.57,
+    21.94,
+    2.56,
+    14.04
+   ],
+   "grams": 128.1,
+   "color_changes": 42,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "slots_used": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    198.6,
+    200.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "04_Facade_avant",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "60"
+    ],
+    [
+     "257"
+    ]
+   ],
+   "layers": 105,
+   "time": "4h 52m 15s",
+   "grams_per_filament": [
+    165.66,
+    2.64,
+    12.19,
+    0.0
+   ],
+   "grams": 180.5,
+   "color_changes": 16,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1,
+    2,
+    3
+   ],
+   "slots_used": [
+    1,
+    2,
+    3
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    284.8,
+    251.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "05_Facade_arriere",
+   "rc": 0,
+   "seconds": 2,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "60"
+    ],
+    [
+     "257"
+    ]
+   ],
+   "layers": 105,
+   "time": "4h 40m 1s",
+   "grams_per_filament": [
+    162.8,
+    2.64,
+    12.19,
+    0.0
+   ],
+   "grams": 177.6,
+   "color_changes": 16,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1,
+    2,
+    3
+   ],
+   "slots_used": [
+    1,
+    2,
+    3
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    284.8,
+    251.8
+   ],
+   "ok": true
+  },
+  {
+   "plate": "06_Tunnel",
+   "rc": 0,
+   "seconds": 1,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "60"
+    ],
+    [
+     "257"
+    ]
+   ],
+   "layers": 200,
+   "time": "1h 35m 10s",
+   "grams_per_filament": [
+    72.55,
+    7.25,
+    0.0,
+    0.0
+   ],
+   "grams": 79.8,
+   "color_changes": 2,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1,
+    2
+   ],
+   "slots_used": [
+    1,
+    2
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    202.6,
+    212.6
+   ],
+   "ok": true
+  },
+  {
+   "plate": "07_Petites_pieces_bleu",
+   "rc": 0,
+   "seconds": 3,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 152,
+   "time": "43m 48s",
+   "grams_per_filament": [
+    14.93,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 14.9,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [
+    8.2,
+    8.4,
+    41.8,
+    47.0
+   ],
+   "ok": true
+  },
+  {
+   "plate": "08_Diffuseurs_ivoire",
+   "rc": 0,
+   "seconds": 1,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 110,
+   "time": "22m 16s",
+   "grams_per_filament": [
+    0.0,
+    2.88,
+    0.0,
+    0.0
+   ],
+   "grams": 2.9,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    2
+   ],
+   "slots_used": [
+    2
+   ],
+   "part_xy": [],
+   "ok": true
+  },
+  {
+   "plate": "09_Butees_TPU",
+   "rc": 0,
+   "seconds": 1,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 11,
+   "time": "3m 23s",
+   "grams_per_filament": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 0.4,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [
+    10.9,
+    11.0,
+    80.9,
+    14.9
+   ],
+   "ok": true
+  },
+  {
+   "plate": "10_Cames_reglables",
+   "rc": 0,
+   "seconds": 5,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 141,
+   "time": "25m 49s",
+   "grams_per_filament": [
+    2.81,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 2.8,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [],
+   "ok": true
+  },
+  {
+   "plate": "11_Gabarit_porte",
+   "rc": 0,
+   "seconds": 3,
+   "conflicts": [],
+   "printer": "Creality K1 Max 0.4 nozzle",
+   "tower_setting": [
+    [
+     "15"
+    ],
+    [
+     "220"
+    ]
+   ],
+   "layers": 15,
+   "time": "1h 1m 26s",
+   "grams_per_filament": [
+    37.51,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "grams": 37.5,
+   "color_changes": 0,
+   "filament_colour": "#123A63;#F4E6C8;#161B23;#BD9452",
+   "slots_assigned": [
+    1
+   ],
+   "slots_used": [
+    1
+   ],
+   "part_xy": [
+    8.2,
+    8.2,
+    241.8,
+    250.0
+   ],
+   "ok": true
+  }
+ ]
+}

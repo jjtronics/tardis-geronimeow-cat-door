@@ -1,0 +1,40 @@
+name: Retour d'impression / Print report
+description: Vous avez imprimé une partie de la chatière ? Racontez-nous. / You printed part of the cat flap? Tell us.
+title: "[Impression / Print] "
+labels: ["retour d'impression"]
+body:
+  - type: input
+    id: printer
+    attributes:
+      label: Imprimante et logiciel / Printer and slicer
+      placeholder: "Creality K1 Max + CFS, Creality Print 7.3.1"
+    validations:
+      required: true
+  - type: input
+    id: filament
+    attributes:
+      label: Filament
+      placeholder: "Hyper PLA, CR-TPU…"
+  - type: checkboxes
+    id: plates
+    attributes:
+      label: Plateaux imprimés / Plates printed
+      options:
+        - label: 00_Eprouvette_jeux
+        - label: 01_Prototype_mecanique_75mm
+        - label: 02 / 03 Battants (flaps)
+        - label: 04 / 05 Façades (fronts)
+        - label: 06_Tunnel
+        - label: 07 à 11 / 07 to 11 (petites pièces, cames, gabarit)
+  - type: textarea
+    id: fits
+    attributes:
+      label: Ajustements / Fits
+      description: Axe, aimants, lame du verrou, came, ILS… trop serré, bon, trop lâche ? / Axle, magnets, lock blade, cam, reed… too tight, good, too loose?
+  - type: textarea
+    id: result
+    attributes:
+      label: Résultat et photos / Result and photos
+      description: Ce qui a marché, ce qui n'a pas marché. Glissez vos photos ici. / What worked, what did not. Drop your photos here.
+    validations:
+      required: true

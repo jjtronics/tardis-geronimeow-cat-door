@@ -1,0 +1,16 @@
+# Fichiers locaux et caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# Sauvegardes automatiques Blender et journaux de calcul
+*.blend[1-9]*
+*.log
+
+# Images de travail : les GIF, MP4 et rendus finaux restent versionnes
+**/montage_frames/
+**/montage_legende/

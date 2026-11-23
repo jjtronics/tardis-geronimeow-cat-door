@@ -1,0 +1,115 @@
+{
+  "library": "3MF Consortium lib3mf",
+  "version": [
+    2,
+    5,
+    0
+  ],
+  "files": [
+    {
+      "file": "00_Eprouvette_jeux.3mf",
+      "mesh_count": 2,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "01_Prototype_mecanique_75mm.3mf",
+      "mesh_count": 7,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "02_Battant_gauche.3mf",
+      "mesh_count": 12,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "03_Battant_droit.3mf",
+      "mesh_count": 12,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "04_Facade_avant.3mf",
+      "mesh_count": 7,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "05_Facade_arriere.3mf",
+      "mesh_count": 3,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "06_Tunnel.3mf",
+      "mesh_count": 2,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "07_Petites_pieces_bleu.3mf",
+      "mesh_count": 24,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "08_Diffuseurs_ivoire.3mf",
+      "mesh_count": 2,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "09_Butees_TPU.3mf",
+      "mesh_count": 4,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "10_Cames_reglables.3mf",
+      "mesh_count": 6,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "11_Gabarit_porte.3mf",
+      "mesh_count": 1,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    },
+    {
+      "file": "assemblage_couleur_reference.3mf",
+      "mesh_count": 62,
+      "warnings": [],
+      "manifold": true,
+      "color_slots": 4,
+      "part_assignments_match": true
+    }
+  ],
+  "creality_print_ui_tested": false
+}

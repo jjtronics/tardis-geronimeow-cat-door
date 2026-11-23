@@ -1,0 +1,902 @@
+{
+  "date": "2026-11-23",
+  "repository": "jjtronics/tardis-geronimeow-cat-door",
+  "current_version": "V8",
+  "file_count": 177,
+  "total_bytes": 54670717,
+  "excluded_generated_directories": [
+    "montage_frames",
+    "montage_legende",
+    "montage_v6_frames",
+    "modes_frames",
+    "modes_video_frames"
+  ],
+  "note": "Inventaire des fichiers utiles. Le fichier inventaire ne se recense pas lui-même.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 159,
+      "sha256": "79bec19e6af13cebd4efee93e96d03847dab4262a00d9b78b8f26eadaed7b6e9"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 27,
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/print_report.yml",
+      "bytes": 1454,
+      "sha256": "e5ed26cfba8f5dd8385b4da9c42cb509809c7c437b046f2720164b9536975e6a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/problem.yml",
+      "bytes": 784,
+      "sha256": "466c3edf917bbc7a2a812d815f12cefde787488fa29dc43d585064847e71b004"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 283,
+      "sha256": "68e11b8ce88eca9698f0f8e1dbbe0eb4941df6a3baf59b2bed4d3f07e0e4bbfd"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2106,
+      "sha256": "636db8fd1825fdc863178996bf714ef316dc611cb1a4a2261df6d42035eb1c72"
+    },
+    {
+      "path": "LICENSE-CODE",
+      "bytes": 1066,
+      "sha256": "98e894d904f821c536675f9cb940da3a42699004a35e2a7d1692db003b581896"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 2196,
+      "sha256": "1fe78373a4865c4822f789ac07f9ed063edd89f23da00ea38a8ae83eb3398660"
+    },
+    {
+      "path": "README.fr.md",
+      "bytes": 5615,
+      "sha256": "3179298140f18c62b32c90fa3fd9f890a62369663d4c98e06491611b90ad56a0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5263,
+      "sha256": "86b7ee94035f08248ce86f19980855c9d6948ed890c1b6e6c54b58ad775742d4"
+    },
+    {
+      "path": "docs/CONCEPTION.md",
+      "bytes": 6211,
+      "sha256": "21fc4893b3c112f40da712fdefbc8482229166c74309791047c30c70a7158cc0"
+    },
+    {
+      "path": "docs/DEVELOPPEMENT.md",
+      "bytes": 4726,
+      "sha256": "8b0faceb50b2b3865caca43b07d3ce4671f7c63fc6597df096e82f9efc1b9c22"
+    },
+    {
+      "path": "docs/GUIDE_CREALITY_PRINT.md",
+      "bytes": 10936,
+      "sha256": "2c4b5be47559fceefd4952d2ee783b68b0618c8c2d63e794327c0f35caa16488"
+    },
+    {
+      "path": "docs/HISTORIQUE.md",
+      "bytes": 18071,
+      "sha256": "04e23aeb049d7af5bbb56dd33fda2c03115793ba59c5565787437565e58b2979"
+    },
+    {
+      "path": "docs/IMPRESSION_ET_MONTAGE.md",
+      "bytes": 6306,
+      "sha256": "fef67dd1f9b7d3ca00360fc8cd51c80787c5973d42dfc2f8847dc3d95d35b92f"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 2387,
+      "sha256": "c7295bfced2b45b4e0f241e02e46973cbbe9dd3a85fa782936c586422aefacd2"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 4833,
+      "sha256": "013c453be08f2d504ac865a2e8721e0ca44a2683ec88b8ef779fa8c9d8e0dcbe"
+    },
+    {
+      "path": "docs/en/PRINTING_AND_ASSEMBLY.md",
+      "bytes": 5979,
+      "sha256": "75c24b37b2f9f884054ec124fe6b8c3ce4acfe77cdd65f3bc1258c709d2dbe6b"
+    },
+    {
+      "path": "docs/images/creality/01_projet_ouvert.jpg",
+      "bytes": 200184,
+      "sha256": "9f434e2d13824bff0334579df0817d9f5dcb61dd9e535966f6b96d60329876a3"
+    },
+    {
+      "path": "docs/images/creality/02_apercu_tranche.jpg",
+      "bytes": 204991,
+      "sha256": "f6be8ee3ac6f9c927a5bf68e86b8e09f7e3daa639813d2dd3a5009f0e5a4a223"
+    },
+    {
+      "path": "docs/images/creality/03_supports_fourreaux.jpg",
+      "bytes": 188765,
+      "sha256": "5abacea8c954f463a1b7d0eedc5ea7a5a1a5dff28afb4a7ae1d88b97a79b8679"
+    },
+    {
+      "path": "docs/images/creality/04_support_genere.jpg",
+      "bytes": 165680,
+      "sha256": "62f5352e224cea8f7710675ef36ec2c168c5a59d3984c0b396deda99df378067"
+    },
+    {
+      "path": "docs/images/creality/05_tpu.jpg",
+      "bytes": 36831,
+      "sha256": "8a57c409176603a773e956820279b62d77c992693b8c6d47422e9f3e99e4c4a3"
+    },
+    {
+      "path": "requirements-tools.txt",
+      "bytes": 109,
+      "sha256": "7b5872ecb026feb7f77b38ad079724e16b2e816042669f69635275580765b8e2"
+    },
+    {
+      "path": "scripts/audit_tours.py",
+      "bytes": 1858,
+      "sha256": "7f6eda12c7894c3ffb86d22b8c57f29bbfe6f6658be39faa24ea388173c9259d"
+    },
+    {
+      "path": "scripts/exporter_projets_creality.py",
+      "bytes": 2569,
+      "sha256": "4c624725821771ec6398957bc940ba478d0db96adebfcb3a7b24b06c94a10e3b"
+    },
+    {
+      "path": "scripts/figure_gabarit.py",
+      "bytes": 3676,
+      "sha256": "f97f506820f298e8aed0927913170400662777e1c809b51058fdd836dc9858c0"
+    },
+    {
+      "path": "scripts/figure_pied_lanterne.py",
+      "bytes": 5185,
+      "sha256": "a1e14e26e02dbd51f60da3c3a49ebc9357f86fc322ea3864881ee5b95a56fad8"
+    },
+    {
+      "path": "scripts/modeles_creality/creality.config",
+      "bytes": 410,
+      "sha256": "a62ac91c3d81c45e0ec4264ae32e5450abb73600259cd13f929de574e3650ba8"
+    },
+    {
+      "path": "scripts/modeles_creality/projet_pla.json",
+      "bytes": 25759,
+      "sha256": "023048afeec89fb7cd8e1b5b0255630a91413b0ee5a056e59ec19b7c98c8afbf"
+    },
+    {
+      "path": "scripts/modeles_creality/projet_tpu.json",
+      "bytes": 25756,
+      "sha256": "0282e064f49678ba300a095470047d04314f5bb5aa42af962872719a59740816"
+    },
+    {
+      "path": "scripts/modeles_creality/slice_info.config",
+      "bytes": 213,
+      "sha256": "524c74f858d35860d02cabef7a6572b5e1cfa8b80222a4340d8a0981a80280f6"
+    },
+    {
+      "path": "scripts/planche_cablage.py",
+      "bytes": 2110,
+      "sha256": "51d2c1ed832803dfe64a5e59a8888d1200f82f89315c210ac73528e5fbedfaf0"
+    },
+    {
+      "path": "scripts/planche_came.py",
+      "bytes": 1770,
+      "sha256": "8c7b920126111d1a7662e00d4b51fd5325b8062218c76163e39f12b4167fb0b6"
+    },
+    {
+      "path": "scripts/planche_details_v8.py",
+      "bytes": 2691,
+      "sha256": "cb2350a7e6e701470c5aa76b43ff8f8a29d7a6aaf8e92fec6260a4de2adaf9d7"
+    },
+    {
+      "path": "scripts/planche_plateaux.py",
+      "bytes": 2206,
+      "sha256": "0c7802a15ae1a6d3a143ed381140f17db61f4cfca4a7b7b4bfca6d7469ef2e5b"
+    },
+    {
+      "path": "scripts/render_cablage.py",
+      "bytes": 5834,
+      "sha256": "45553da79eee9271af4fb502d33c53d1629b715fbf323d91ea508345f2b9d796"
+    },
+    {
+      "path": "scripts/render_came.py",
+      "bytes": 4074,
+      "sha256": "57afb7e6add65b7f117296b1fb8d312d6eaac32a966760aa64b513eedba0e44c"
+    },
+    {
+      "path": "scripts/render_details_v8.py",
+      "bytes": 7063,
+      "sha256": "eaffb3d9ac4e9876fb4ffd592d520a652e28e52cc99a92a019c26e11eb0428c8"
+    },
+    {
+      "path": "scripts/schema_eclairage.py",
+      "bytes": 7938,
+      "sha256": "8e1458f0977f44fdeae7987d5562d77632348c166fe1508b0f0be741eba917f4"
+    },
+    {
+      "path": "scripts/trancher_creality_print.py",
+      "bytes": 5241,
+      "sha256": "60ec37d4aa6df3b4e16c3c7e47565308c4df34078673e3644ec13bad34fe6f65"
+    },
+    {
+      "path": "scripts/update_inventory.py",
+      "bytes": 1656,
+      "sha256": "b63a83d87a0103a4230d65c97a0cc44ff96e833e49abbb745c90e0968d2b1871"
+    },
+    {
+      "path": "scripts/vignettes_plateaux.py",
+      "bytes": 6862,
+      "sha256": "2baf495de4969adce63f1bda632e04d947783b82019d91449469972eb8159928"
+    },
+    {
+      "path": "tardis_v8/01_vue_fermee.png",
+      "bytes": 2705468,
+      "sha256": "60e8bf4c414236df4aaa529989b438391d9ff5599845691d2b50d07c81daad76"
+    },
+    {
+      "path": "tardis_v8/02_vue_ouverte.png",
+      "bytes": 2654548,
+      "sha256": "b0c3cd955a48bddb76d11c6eff40b3adc69b05749b1f50f257ca948f19fb3893"
+    },
+    {
+      "path": "tardis_v8/03_vue_arriere_fermee.png",
+      "bytes": 2703447,
+      "sha256": "317603a9c81562ca94806e19ee612be9dc4d6b18d178a3d46fa8e5f666c04a33"
+    },
+    {
+      "path": "tardis_v8/3mf/00_Eprouvette_jeux.3mf",
+      "bytes": 31780,
+      "sha256": "432b338dd3c9f9e3b6c7ae75543f472b37c4f212e5dabc8ecf9b1a57f7f29815"
+    },
+    {
+      "path": "tardis_v8/3mf/01_Prototype_mecanique_75mm.3mf",
+      "bytes": 160009,
+      "sha256": "57afef560fc3a53b285c2a7a51609c23ec74d6be3f3bbb38b08a5909630a6b8c"
+    },
+    {
+      "path": "tardis_v8/3mf/02_Battant_gauche.3mf",
+      "bytes": 210775,
+      "sha256": "3c5cff53aa3e43f66cbc5a310be5b0942cb930e83d913d48d9740c98b8c1984f"
+    },
+    {
+      "path": "tardis_v8/3mf/03_Battant_droit.3mf",
+      "bytes": 206741,
+      "sha256": "b94bf19a9b3069614b680d9957b2dd5ee9cc0b2859e472f255346b7454881097"
+    },
+    {
+      "path": "tardis_v8/3mf/04_Facade_avant.3mf",
+      "bytes": 139489,
+      "sha256": "ed2b3eedd0b399c5c9776967c019fa4ccf4c08c8baa484dc73c170c1a71b79c6"
+    },
+    {
+      "path": "tardis_v8/3mf/05_Facade_arriere.3mf",
+      "bytes": 110345,
+      "sha256": "b3cb75e501ed11dda70adb595bfcd098a60ed01550098bf0f12f31fdbadc95fa"
+    },
+    {
+      "path": "tardis_v8/3mf/06_Tunnel.3mf",
+      "bytes": 9561,
+      "sha256": "0801517298eea4c1e0e9dce02c43f1713d8ee5a8cbe8d83ffad1bb58837d0390"
+    },
+    {
+      "path": "tardis_v8/3mf/07_Petites_pieces_bleu.3mf",
+      "bytes": 283573,
+      "sha256": "4f5db1a7ce311472489f449ecc9e62aacef70dd1641ef51281e22948452455f7"
+    },
+    {
+      "path": "tardis_v8/3mf/08_Diffuseurs_ivoire.3mf",
+      "bytes": 18501,
+      "sha256": "f531e8a0e6ab9f362a4c0148e4d36f1ca695f526789a6b994f55e018c0b4867e"
+    },
+    {
+      "path": "tardis_v8/3mf/09_Butees_TPU.3mf",
+      "bytes": 13276,
+      "sha256": "c542922419a19079946adadd7cc8372d9832ab485adaa55a2ac8297adb4e7420"
+    },
+    {
+      "path": "tardis_v8/3mf/10_Cames_reglables.3mf",
+      "bytes": 201074,
+      "sha256": "e0c029e2a2c0f75e941e58f33d9fbe80c938b55c849c2c43b9528e303bb2d056"
+    },
+    {
+      "path": "tardis_v8/3mf/11_Gabarit_porte.3mf",
+      "bytes": 87039,
+      "sha256": "c92e8381e03cc9e8eba634f1e13951cfcebbdd5949fa7ac41b7002c8babf3859"
+    },
+    {
+      "path": "tardis_v8/README.md",
+      "bytes": 21408,
+      "sha256": "c611387bdc4e554c682f7f46c8d1116a6f2417c0194e3a966cbe157dac8271fe"
+    },
+    {
+      "path": "tardis_v8/assemblage_couleur_reference.3mf",
+      "bytes": 970716,
+      "sha256": "6cc8e0baf897641e8a288ece9c7e699570c3c7f6a98f8e53c1569d00985b7333"
+    },
+    {
+      "path": "tardis_v8/controle_3mf.json",
+      "bytes": 2519,
+      "sha256": "49dc6fe293c30027e7d832a4611213c9eeb4aa7c45de7b377831d5d652d39552"
+    },
+    {
+      "path": "tardis_v8/controle_geometrie.json",
+      "bytes": 3416,
+      "sha256": "3e5fbd780ddc1fb374b35c3dd7deef4cc672478f0943d007b280aea7547d54a7"
+    },
+    {
+      "path": "tardis_v8/controle_tranchage.json",
+      "bytes": 6942,
+      "sha256": "97c608950c78614bca11488f18f46dfe768ad259f80857f4d2e7c06b38bb4917"
+    },
+    {
+      "path": "tardis_v8/esphome/chatiere-tardis.yaml",
+      "bytes": 4105,
+      "sha256": "12d81475023c9bd86e162190d5f350a4f92343998485a7e8a508af547ec948f0"
+    },
+    {
+      "path": "tardis_v8/generate.py",
+      "bytes": 59642,
+      "sha256": "21fe47047965f6d8374ad716615199aaa7e5cb4fbf3db120f6bfa1bb3ed68a1d"
+    },
+    {
+      "path": "tardis_v8/images/aimants_capteur.jpg",
+      "bytes": 48306,
+      "sha256": "cb8a3c202ef0249f2cf867124f43d57447dbe451f2237c16a44531d41e1a0113"
+    },
+    {
+      "path": "tardis_v8/images/cablage_rgb.jpg",
+      "bytes": 112145,
+      "sha256": "95788fd7f9b14658a27b857e3e744785d6a44f0c73b42fc17980336d668de3bf"
+    },
+    {
+      "path": "tardis_v8/images/came_rappel.jpg",
+      "bytes": 51826,
+      "sha256": "a4ff660a431158ba1312740844fd109db0eb249c5481035efc57e0369d901782"
+    },
+    {
+      "path": "tardis_v8/images/cames_reglables.jpg",
+      "bytes": 28263,
+      "sha256": "ec6bb2c14f58cde7fd46538007badd78b6b55e5629d70be23b9dfc5df4b92fbc"
+    },
+    {
+      "path": "tardis_v8/images/gabarit_porte.png",
+      "bytes": 45012,
+      "sha256": "905861bdbf81cc1118960cda75f78599b4fd2d4a0ea1c2ab504db95419020c7d"
+    },
+    {
+      "path": "tardis_v8/images/pied_lanterne.jpg",
+      "bytes": 69938,
+      "sha256": "22a4b3a9ebac4b6d624652cdc0c059444e5fa52a28c0bf1a9d37c5ec09b2f799"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/00_Eprouvette_jeux.jpg",
+      "bytes": 26007,
+      "sha256": "84087409fdb598d54918366b6c7bb317c348a977e20dae134647e7c3c83e7763"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/01_Prototype_mecanique_75mm.jpg",
+      "bytes": 34926,
+      "sha256": "ecb4f3844b19c71ff1491bf3d03fbc05f5169e504cb98a37118c2df9e9e68ec5"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/02_Battant_gauche.jpg",
+      "bytes": 38472,
+      "sha256": "be9f94d8a16c306b46caf621e321dadfaa6a7e4ed53f709f5ede6f741b52a65b"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/03_Battant_droit.jpg",
+      "bytes": 39334,
+      "sha256": "efd5b59c412fa3efc23aaf037d262dd9edcc8de184d39ee11385ce5668ca844b"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/04_Facade_avant.jpg",
+      "bytes": 40337,
+      "sha256": "958163832e7ab3acbaa6bdb2aa07d900a338a056323eddf0c684f37857c948e3"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/05_Facade_arriere.jpg",
+      "bytes": 39550,
+      "sha256": "e645e8d35e4aec42f79266d5ee994512b7a6a5ac5c2838da7c69ffb3c86734f8"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/06_Tunnel.jpg",
+      "bytes": 34760,
+      "sha256": "64269598055cce62abf02e52a207991a8a1d10ccc93b471fb4fb5303d46320c0"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/07_Petites_pieces_bleu.jpg",
+      "bytes": 30934,
+      "sha256": "b38ebbb228baa55ad309fb0f291a2aefad09b14d906c65884208029bde22851f"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/08_Diffuseurs_ivoire.jpg",
+      "bytes": 26579,
+      "sha256": "09db997383b10c800f73b311c83715e8316827196a7e13306a2c3110aec05d6e"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/09_Butees_TPU.jpg",
+      "bytes": 25015,
+      "sha256": "113f683ffd9b9f773b367994986a5c7d8c682bf6999111eab1f3336fcff44f57"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/10_Cames_reglables.jpg",
+      "bytes": 25967,
+      "sha256": "ed2114ba368f280025fd98b69a5f2fc511080a80857f6c8e8a25dc553f168ad2"
+    },
+    {
+      "path": "tardis_v8/images/plateaux/11_Gabarit_porte.jpg",
+      "bytes": 30725,
+      "sha256": "6f3204831f00606ef4f9eb5fcf39a5342ad0e117d112ba2e8cfe25a5fac8e1ab"
+    },
+    {
+      "path": "tardis_v8/images/plateaux.jpg",
+      "bytes": 212356,
+      "sha256": "70d0cec0daad63662a93aa6a383e5e485a68a7ad3c316389be204d8dc9280b44"
+    },
+    {
+      "path": "tardis_v8/images/schema_eclairage.png",
+      "bytes": 90098,
+      "sha256": "8f96080f34820efe8e020961506d0f927fb30405bf48e112a264c27823b87b73"
+    },
+    {
+      "path": "tardis_v8/images/verrou_central.jpg",
+      "bytes": 65016,
+      "sha256": "05aebcc5946a6759854423631a68ad686f336090415109727ce19896ec250574"
+    },
+    {
+      "path": "tardis_v8/stl/base_lanterne.stl",
+      "bytes": 60584,
+      "sha256": "c157dfbe51e3fd58ab2b1604e767e1902f2c66965dba66bbfe8f9bb8fb8ea980"
+    },
+    {
+      "path": "tardis_v8/stl/base_lanterne_arriere.stl",
+      "bytes": 60584,
+      "sha256": "4eb697eb96e22fe91e23240a0fb0324df5965e99b9057be1eb9bd14aeb95f5c4"
+    },
+    {
+      "path": "tardis_v8/stl/battant_droit_arriere.stl",
+      "bytes": 237584,
+      "sha256": "b07cf69c920e1304811e9bc26de4c770bc78c96c0c672a9af3350239e695ca46"
+    },
+    {
+      "path": "tardis_v8/stl/battant_droit_avant.stl",
+      "bytes": 228284,
+      "sha256": "f69ce11e95d0730b64f8734ab3ba30245bf7551e6d027cc891c21e375601fb34"
+    },
+    {
+      "path": "tardis_v8/stl/battant_gauche_arriere.stl",
+      "bytes": 260484,
+      "sha256": "2f155133d796b596623b6e8a711eb520d9369864bbdad0d50924ef35b1921fd2"
+    },
+    {
+      "path": "tardis_v8/stl/battant_gauche_avant.stl",
+      "bytes": 228584,
+      "sha256": "c08b56592c92d34b0105f1fa9257bee2fac1b72cb971a94c0c089e6debbf4861"
+    },
+    {
+      "path": "tardis_v8/stl/berceau_ESP.stl",
+      "bytes": 14884,
+      "sha256": "89def6eb793a08b365fdaf8957f4d04774dfbdfbefb09d1a99624cfc6a7e5777"
+    },
+    {
+      "path": "tardis_v8/stl/bouton_laiton_droit.stl",
+      "bytes": 34284,
+      "sha256": "ef0b816465787aeeb6d519df9be7fcb30242a06f230cf01195798475023b6a15"
+    },
+    {
+      "path": "tardis_v8/stl/bouton_laiton_droit_dos.stl",
+      "bytes": 34284,
+      "sha256": "4af732e5f2865738062c34c07340063b0076d64e0d997fedcbb1d7001b444d72"
+    },
+    {
+      "path": "tardis_v8/stl/bouton_laiton_gauche.stl",
+      "bytes": 34684,
+      "sha256": "a7a32f0949d849bcb313c26e339c75a2b936b607bc4e7413e8185fa041b7f051"
+    },
+    {
+      "path": "tardis_v8/stl/bouton_laiton_gauche_dos.stl",
+      "bytes": 34684,
+      "sha256": "8ff35e122da5705b7023deb6e4c4e6b9f7d54a14b60d5acb2f697ad068b0d38c"
+    },
+    {
+      "path": "tardis_v8/stl/bouton_verrou_central.stl",
+      "bytes": 77084,
+      "sha256": "c0ea154dad730159482724ee23026aeff06531fbcb0835348f1ca9611a86b4c1"
+    },
+    {
+      "path": "tardis_v8/stl/butee_TPU_arriere_droite.stl",
+      "bytes": 9484,
+      "sha256": "3c40a116ecb16abf674a3a223a6b532076b357d2699fb1dfe21367d8087787de"
+    },
+    {
+      "path": "tardis_v8/stl/butee_TPU_arriere_gauche.stl",
+      "bytes": 9484,
+      "sha256": "16ea5eca7b025c56bfd17c155239cb4d3f71ca620ad82885c93598e431cab062"
+    },
+    {
+      "path": "tardis_v8/stl/butee_TPU_avant_droite.stl",
+      "bytes": 7884,
+      "sha256": "4aee1491ec110c7c279a45ccd2d27c95b030a1fe8b396a8761d6adc89f81c0c6"
+    },
+    {
+      "path": "tardis_v8/stl/butee_TPU_avant_gauche.stl",
+      "bytes": 7884,
+      "sha256": "27846034869886152e24346859c41c578825e0ee5e0d442d015fbb93d8d556c5"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_-1_176.0.stl",
+      "bytes": 102284,
+      "sha256": "80c26d7c18f63f5beee61249ae346747c096a3c0f24cec55940685a71598a67d"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_-1_176.0_arriere.stl",
+      "bytes": 90984,
+      "sha256": "a13929e2f5ad6eb9d00492732dd35b16f44b88c23bf78263221a7999bbde9dbd"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_-1_30.stl",
+      "bytes": 102284,
+      "sha256": "8aeb89b340555fbe515172c81dd881153eb738765282755d79e096b06ed6f1b1"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_-1_30_arriere.stl",
+      "bytes": 90984,
+      "sha256": "3aeee9f720284561d1f79ef1db54bd76bfbb45eb2e9b2862aa5c9d2d740d589b"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_1_176.0.stl",
+      "bytes": 102284,
+      "sha256": "08dfd3ea79e00748b67e36312ccc12af4bb3b03ff6c2feeb6c1998917c6ec0fc"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_1_176.0_arriere.stl",
+      "bytes": 90984,
+      "sha256": "a4e5ac278bf9aa2a59d16186d46fd7b42cf2b9f21ac023c79bfece6b8aecc788"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_1_30.stl",
+      "bytes": 102284,
+      "sha256": "dd1040403603ea6e6515042b1cdd7bb12aad75adf9a0d54f6ca6930a185aa306"
+    },
+    {
+      "path": "tardis_v8/stl/cache_vis_1_30_arriere.stl",
+      "bytes": 90984,
+      "sha256": "8a5f0bfd5584efd931d6911e40b837e07af553cd2c43466149a07edec09e4bf3"
+    },
+    {
+      "path": "tardis_v8/stl/cadre_arriere_tardis.stl",
+      "bytes": 249684,
+      "sha256": "1ca65990b51af4e1c1cecb542898c952d288a5774294338f1b63990024120652"
+    },
+    {
+      "path": "tardis_v8/stl/cadre_monobloc_moulure.stl",
+      "bytes": 406984,
+      "sha256": "5897f22e21e1ccec496d1cf289efdff0c9504b012b213ab50ede93c07b95fcfa"
+    },
+    {
+      "path": "tardis_v8/stl/cage_chapeau_lanterne.stl",
+      "bytes": 150084,
+      "sha256": "7d2bf3de4db3a9c2b778e52add47fed372fc3b898770d7034752d22df724f2fc"
+    },
+    {
+      "path": "tardis_v8/stl/cage_chapeau_lanterne_arriere.stl",
+      "bytes": 150084,
+      "sha256": "e197eb4f44dded299486b0b245433994ccdab591574972ffd5f82be28f95b974"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_droite_1.stl",
+      "bytes": 12684,
+      "sha256": "e35875c07d5e36aa36ab33e0585af10a0c7e57935f3262768edcb26b2f20709f"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_droite_2.stl",
+      "bytes": 12684,
+      "sha256": "d331d80e961e254c60f38a1bae3e0e613f64654e8f5c5552f9a5a71122828231"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_droite_3.stl",
+      "bytes": 12684,
+      "sha256": "89cbf1bf34a2ef4e24caf126a1cf40798c3855a7f36870905fd2ab37cbde9227"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_droite_4.stl",
+      "bytes": 12684,
+      "sha256": "3ed6e33685be6881298f1df43fc2a2babe2b2a1cdbf47b02974e5ea1a0af6655"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_gauche_1.stl",
+      "bytes": 12684,
+      "sha256": "48115550095bad5b0ba7b09b0421510d3a805cb3c742563ded07fce19da80036"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_gauche_2.stl",
+      "bytes": 12684,
+      "sha256": "469c8c111c46f46e0d92ee90499dcc133273ac89945734b1942bf9de2071d1f2"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_gauche_3.stl",
+      "bytes": 12684,
+      "sha256": "b1da5ebb9231c6a26bb68be32c7453ea0b472d6e72f0279a64f54ecd7ab2be72"
+    },
+    {
+      "path": "tardis_v8/stl/cale_aimant_gauche_4.stl",
+      "bytes": 12684,
+      "sha256": "32eb77812f501c82072f0ffd6ae49741cbaada50f8485351d92bca13ccf2dfec"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_3,5_droite.stl",
+      "bytes": 153384,
+      "sha256": "515bfc500352b34021f775cde20b560cf6beddbffdb6d6fd24934be96b86dd3d"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_3,5_gauche.stl",
+      "bytes": 153384,
+      "sha256": "9f62c5bdba4237c56c566f8c2aa04fab074437606bc50d4f206da1b0e05b4d56"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_4,5_droite.stl",
+      "bytes": 155184,
+      "sha256": "42e85d89de547bd29156c409581276b2bac708262d50e5061348aa29a3f2ba1a"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_4,5_gauche.stl",
+      "bytes": 155184,
+      "sha256": "00b4f58f4e7b2c90129c72d53b87ba6ec321408b5cb55959ef70e80953f9bbec"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_5,5_droite.stl",
+      "bytes": 157784,
+      "sha256": "4ebac35ef165f5e4f693c689af5636a2e5074680b364100668947a17110b7506"
+    },
+    {
+      "path": "tardis_v8/stl/came_rapportee_5,5_gauche.stl",
+      "bytes": 157784,
+      "sha256": "d3e5aa31a33deff9e2470f4efbe0e0dc68bfda15ea076c09086668788a88209b"
+    },
+    {
+      "path": "tardis_v8/stl/croix_medallion.stl",
+      "bytes": 2284,
+      "sha256": "97bae2c20c29f14692e2d08543004b1a25922658465e1f324a4e50835018f707"
+    },
+    {
+      "path": "tardis_v8/stl/croix_medallion_dos.stl",
+      "bytes": 2284,
+      "sha256": "d359d2435f820a7a455d5530f95368123361aa093194564ecb29ef110a35f511"
+    },
+    {
+      "path": "tardis_v8/stl/diffuseur_ivoire.stl",
+      "bytes": 25684,
+      "sha256": "73a673fc1f070c0456d19f96e40682b60826c3d3179da3018c7c4a8d36ca1d0c"
+    },
+    {
+      "path": "tardis_v8/stl/diffuseur_ivoire_arriere.stl",
+      "bytes": 25684,
+      "sha256": "1edc9078ed972f07d13be7ae8287e89194060ab81b2a23e06babceba79a0921d"
+    },
+    {
+      "path": "tardis_v8/stl/enseigne_noire.stl",
+      "bytes": 9484,
+      "sha256": "e889a573f03b32a6a6f6dd904481c79d1f6691ebaa1f8d5fa94dbae70bd31e5f"
+    },
+    {
+      "path": "tardis_v8/stl/enseigne_noire_arriere.stl",
+      "bytes": 9484,
+      "sha256": "5fd7936336cba08327967bc0ef316b62fc519dcca2bc7095fed8fea1679ef41a"
+    },
+    {
+      "path": "tardis_v8/stl/eprouvette_jeux.stl",
+      "bytes": 87884,
+      "sha256": "7be4ec1dcd18c6c6b2c0fd4e101462195d2e86cd7e9fadd9e41ceb39bc1c2232"
+    },
+    {
+      "path": "tardis_v8/stl/eprouvette_verrou_et_cle.stl",
+      "bytes": 33084,
+      "sha256": "df34c435bedfcbbc289f9301d015fb327f2ffc09201deb3fa2f51012a8c5e2f9"
+    },
+    {
+      "path": "tardis_v8/stl/filet_recentreur_ivoire.stl",
+      "bytes": 1684,
+      "sha256": "5f61b30924d1937904faecf650dd2e4c415884a9f4a38bf5ae5b00c2f415ceb0"
+    },
+    {
+      "path": "tardis_v8/stl/gabarit_decoupe_porte.stl",
+      "bytes": 366284,
+      "sha256": "aa5ea7bb33b36771743908323e90e6e58a0e2d2aaf587401fb4dd4b4d7e271e2"
+    },
+    {
+      "path": "tardis_v8/stl/lame_verrou_central.stl",
+      "bytes": 22484,
+      "sha256": "5bde8a8bff8f6c89b2953188c035ba1857e15e3a545cbcc63b247acc9c73b3f3"
+    },
+    {
+      "path": "tardis_v8/stl/lettrage_enseigne_ivoire.stl",
+      "bytes": 227084,
+      "sha256": "11444e99eeed79a9c38e8f8e356f840f0b597392fe9c5e4c1438692d05881046"
+    },
+    {
+      "path": "tardis_v8/stl/lettrage_enseigne_ivoire_arriere.stl",
+      "bytes": 227084,
+      "sha256": "877ff90b7197705f175341f74a781ba4772bcb76aa44da71498623c44684b622"
+    },
+    {
+      "path": "tardis_v8/stl/medaillon_ivoire.stl",
+      "bytes": 51284,
+      "sha256": "16da66a3e761420df6f7c9bf51cd47ca4465a13431e4a297364f3603e7b27b43"
+    },
+    {
+      "path": "tardis_v8/stl/medaillon_ivoire_dos.stl",
+      "bytes": 51284,
+      "sha256": "50572d884fdd28b5a1d796c6cb6555856a703f9e0ca5bd7638a4e7e408341bb2"
+    },
+    {
+      "path": "tardis_v8/stl/pion_droit_182.stl",
+      "bytes": 12684,
+      "sha256": "fbd280867484737cc0c97fce59f34e396c69ba315accba70cc05121b1ab15e05"
+    },
+    {
+      "path": "tardis_v8/stl/pion_droit_74.stl",
+      "bytes": 12684,
+      "sha256": "e3b0fd0f9aa0290bd04b0c9acfe49c21b61df3e19c9159b91f5476a99ec07ccb"
+    },
+    {
+      "path": "tardis_v8/stl/pion_gauche_182.stl",
+      "bytes": 12684,
+      "sha256": "ae217196e1bedcfefd01747ead351c0cd38f15acc3db837b94d6bc9a0d3ee8af"
+    },
+    {
+      "path": "tardis_v8/stl/pion_gauche_74.stl",
+      "bytes": 12684,
+      "sha256": "5218f12fa76e60f6abe571bf5637a498da060e97446bc109b11b0701beb70ca9"
+    },
+    {
+      "path": "tardis_v8/stl/plaque_telephone.stl",
+      "bytes": 10684,
+      "sha256": "ac4e7d3e6c41dfd3039ca78733da93a2bbb19a499232abff90ae88005104fd67"
+    },
+    {
+      "path": "tardis_v8/stl/plaque_telephone_dos.stl",
+      "bytes": 10684,
+      "sha256": "146f09cbb84031d0312dab40f001fce9055e9ffcef075af6b91560b1bc4dc342"
+    },
+    {
+      "path": "tardis_v8/stl/prototype_battant_droit_arriere_75mm.stl",
+      "bytes": 130884,
+      "sha256": "73c89b9e3358e1c31d6a00fda02e852eca30916c0b0a8fe325cb82ca1544e2d1"
+    },
+    {
+      "path": "tardis_v8/stl/prototype_battant_droit_avant_75mm.stl",
+      "bytes": 130784,
+      "sha256": "cdec399e70377a6f950dae3e955cc60134dc492b7a517ab83218ddec2c26c3d0"
+    },
+    {
+      "path": "tardis_v8/stl/prototype_battant_gauche_arriere_75mm.stl",
+      "bytes": 130784,
+      "sha256": "a862dc0c0b1c56d427ee0abc8e3e5932501b03d1112e50a01b916d712c5d0853"
+    },
+    {
+      "path": "tardis_v8/stl/prototype_battant_gauche_avant_75mm.stl",
+      "bytes": 130884,
+      "sha256": "07779c290558f3038b0df9ccf23594f90b3b8e04136ec6719d0e6d651c3b5e84"
+    },
+    {
+      "path": "tardis_v8/stl/prototype_cadre_bas_75mm.stl",
+      "bytes": 216884,
+      "sha256": "16352000cd95c5db6bcf1f752bceaa7321d6dcfa4a3597baf22f9955985ff123"
+    },
+    {
+      "path": "tardis_v8/stl/texte_plaque_noir.stl",
+      "bytes": 320284,
+      "sha256": "14066c3409ab6f427489e8de58711e5fbc9fd19ea4c165d9e13b9a948694d60f"
+    },
+    {
+      "path": "tardis_v8/stl/texte_plaque_noir_dos.stl",
+      "bytes": 320284,
+      "sha256": "5566b19cd9d65f0a955bdf22af1f57c42870a7a190a0f49983160636a69cf4af"
+    },
+    {
+      "path": "tardis_v8/stl/tourniquet_verrou.stl",
+      "bytes": 20084,
+      "sha256": "3b26868a8154de3af709f7d365ef0ea0199125e45970f7013dbcf9bf8d9db3e4"
+    },
+    {
+      "path": "tardis_v8/stl/tunnel_exterieur.stl",
+      "bytes": 3284,
+      "sha256": "b9b179cb3c662f9a39c13eeeb5fa7592610b74c6e6c74838fe4efe522d7af626"
+    },
+    {
+      "path": "tardis_v8/stl/vitre_ivoire_droit.stl",
+      "bytes": 17684,
+      "sha256": "9970a718045bafef0c3e4d853c2a05625b3e1ff8360f51d57336b69db5e788ab"
+    },
+    {
+      "path": "tardis_v8/stl/vitre_ivoire_droit_dos.stl",
+      "bytes": 17684,
+      "sha256": "8bc9e0fb59c59d9025cfa43f4569e09323124a9e4f7ed7a3f7ff7a2b00caacee"
+    },
+    {
+      "path": "tardis_v8/stl/vitre_ivoire_gauche.stl",
+      "bytes": 18084,
+      "sha256": "e96f908a2268077d4694e3c1c4026e8ea37d2a49a1483c02645304a2306df097"
+    },
+    {
+      "path": "tardis_v8/stl/vitre_ivoire_gauche_dos.stl",
+      "bytes": 18084,
+      "sha256": "7f71ca986d34f99573033abe8c48b547f84765be4ea43b74529a69da162a5f47"
+    },
+    {
+      "path": "tardis_v8/tardis_v8.blend",
+      "bytes": 1511056,
+      "sha256": "7df68dd06d7054c776bb2fecad7f1077bf41d0867aed3d0d475921df117faf86"
+    },
+    {
+      "path": "tardis_v8/verification.json",
+      "bytes": 20588,
+      "sha256": "bb31a9db0111a33f80624c38e78aa47672bdb6e682ab1f18ddcd024bbf6431bc"
+    },
+    {
+      "path": "tardis_v8/verify_3mf.py",
+      "bytes": 1994,
+      "sha256": "546c952b38e09199562847a207d1e2ac9f5488d0d4c2a815bec10723377b2bd8"
+    },
+    {
+      "path": "tardis_v8/verify_geometry.py",
+      "bytes": 8788,
+      "sha256": "a1fa7b40e44a7b6cafbd58812b14e9dd4895c5907b76562a8adbd060085798ca"
+    },
+    {
+      "path": "tardis_v8/visualisations/README.md",
+      "bytes": 2135,
+      "sha256": "6bb696c0d49b8d21629c71d5a269c96cff3766ab6078bcfde409ab31d84333ea"
+    },
+    {
+      "path": "tardis_v8/visualisations/compose_montage.py",
+      "bytes": 7097,
+      "sha256": "8986a15fd5654ea0449ab80603e302cb8d8416c687c8bc3565d89fd3fa5bd03f"
+    },
+    {
+      "path": "tardis_v8/visualisations/export_animation.json",
+      "bytes": 637,
+      "sha256": "ad2504599e7032c40e751e1de003b60da86703aa2b66d3ce29a44318b57a2aa9"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage.json",
+      "bytes": 134309,
+      "sha256": "6c8d2f39217789cf82e47a3741ec102b5d3d710835a11e59e629adc8425ac09d"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_cames.png",
+      "bytes": 599827,
+      "sha256": "792d0c86b67ac5315be63bde8cd69864da949e5ebc11aac91d6f6e6a7c1441a6"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_eclate.png",
+      "bytes": 704823,
+      "sha256": "2a1b0e6a64192c11d2cb658500d999d4318ac0a9a0399ecb4e7eca6c308eb539"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_ouvert.png",
+      "bytes": 693420,
+      "sha256": "3caf7fcaed6c33ac368a26dfe4643aac717e7b41c73a0c4a1b8fda37ff075c05"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_verrou.png",
+      "bytes": 1430346,
+      "sha256": "cb2a47bef8e0a81fb86f7fa91dd842e3cffd820d2f58b265b1e7b789b93e85df"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_complet_V8.gif",
+      "bytes": 13598313,
+      "sha256": "15df946e717bfdcf5de0df6598db17eef750dcfb9f88704be095a4ea8c9dcc16"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_complet_V8.mp4",
+      "bytes": 16428620,
+      "sha256": "14929d778600a54082bffd7feb5c6cedcbc0b527457ef2e85d8efd5f43f46ed0"
+    },
+    {
+      "path": "tardis_v8/visualisations/render_visuals.py",
+      "bytes": 25307,
+      "sha256": "4ee05c67ba58a18590117544276b4580ec23a975972fe89bdf2e8dfebe00bdb3"
+    }
+  ]
+}

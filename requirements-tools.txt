@@ -1,0 +1,3 @@
+# Outils Python hors Blender, versions utilisees pour les controles et les GIF.
+lib3mf==2.5.0
+Pillow==13.0.0
