@@ -287,7 +287,7 @@ for s in (-1,1):
         register(cap,'07_Caches_vis',orientation='REAR')
 
 # Enseigne rapportee : trois tailles de lettres, toutes presentes en maillage.
-# Lite : l'enseigne remplit exactement son logement et s'imprime dans la facade
+# L'enseigne remplit exactement son logement et s'imprime dans la facade
 # (noir + ivoire), sans piece a coller. Plaque affleurante a 0,1 mm sous le bandeau.
 sign=block('enseigne_noire',(-112,-20.1,H+16),(112,-17.7,H+42),2,r=.5)
 register(sign,'01_Cadre',2)
@@ -461,7 +461,7 @@ for z in (LZ+7.8,LZ+28.2):
 for deg in (0,90,180,270):
     a=math.radians(deg);x,y=9.25*math.cos(a),-10+9.25*math.sin(a)
     cage_items.append(cyl('montant cage',(x,y,LZ+18.25),.95,22.5))
-# Lite : le chapeau est fondu avec la cage (une seule piece bleue, montants
+# Le chapeau est fondu avec la cage (une seule piece bleue, montants
 # prolonges de 0,5 mm dans le bord du toit pour une vraie fusion).
 cage_items += [cyl('bord toit',(0,-10,LZ+30),10.5,2),
                cyl('toit conique',(0,-10,LZ+33),10,5,radius2=4),

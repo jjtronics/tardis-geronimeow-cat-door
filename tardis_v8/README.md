@@ -174,7 +174,9 @@ et sa résistance. Il se colle dans l'espace libre à l'avant du berceau.
 Mise en route :
 
 1. Installer ESPHome : module Home Assistant, ou `pip install esphome`.
-2. Créer `secrets.yaml` avec `wifi_ssid` et `wifi_password`.
+2. Copier [`esphome/secrets.yaml.example`](esphome/secrets.yaml.example) en `secrets.yaml`
+   et le remplir : Wi-Fi, clé de chiffrement de l'API (`openssl rand -base64 32`), mots
+   de passe OTA et du point d'accès de secours. Ce fichier n'est jamais commité.
 3. Brancher l'ESP en USB et lancer `esphome run chatiere-tardis.yaml`.
 
 Home Assistant détecte ensuite la chatière : notifications, historique des
@@ -234,7 +236,7 @@ Chaque plateau est un **projet Creality Print** prêt à trancher :
 | `00_Eprouvette_jeux` | axe, vis, cache, pion, logement d'aimant, avant-trou M3, poche d'ILS, canal du verrou, clé en D | 1 | 0 | 20 min | 12 g |
 | `01_Prototype_mecanique_75mm` | bas du cadre et bas des battants à l'échelle 1:1 : cames, verrou, aimants | 1 | 0 | 3 h 03 | 118 g |
 | `02_Battant_gauche` | demi-coque avant + arrière + 2 pions | 4 | 43 | 5 h 37 | 129 g |
-| `03_Battant_droit` | idem | 4 | 42 | 5 h 33 | 128 g |
+| `03_Battant_droit` | idem | 4 | 42 | 5 h 32 | 128 g |
 | `04_Facade_avant` | cadre + enseigne POLICE BOX (noir + ivoire) | 3 | 16 | 4 h 52 | 180 g |
 | `05_Facade_arriere` | idem, face intérieure, fenêtre USB-C | 3 | 16 | 4 h 40 | 178 g |
 | `06_Tunnel` | tunnel + filet ivoire | 2 | 2 | 1 h 35 | 80 g |

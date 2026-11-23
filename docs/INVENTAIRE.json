@@ -2,8 +2,8 @@
   "date": "2026-11-23",
   "repository": "jjtronics/tardis-geronimeow-cat-door",
   "current_version": "V8",
-  "file_count": 177,
-  "total_bytes": 54670717,
+  "file_count": 180,
+  "total_bytes": 54674730,
   "excluded_generated_directories": [
     "montage_frames",
     "montage_legende",
@@ -15,8 +15,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 159,
-      "sha256": "79bec19e6af13cebd4efee93e96d03847dab4262a00d9b78b8f26eadaed7b6e9"
+      "bytes": 132,
+      "sha256": "6feb64e86732b2d4b0702fae71a79f27605f3ff1513c61e1a75f2c7db4dc2a62"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/config.yml",
@@ -34,9 +34,19 @@
       "sha256": "466c3edf917bbc7a2a812d815f12cefde787488fa29dc43d585064847e71b004"
     },
     {
+      "path": ".github/pull_request_template.md",
+      "bytes": 676,
+      "sha256": "98f92a3d419b0d892ba58745cb7dd7c630506702f0ed0aa2a2b6d85efa22ef0b"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 283,
-      "sha256": "68e11b8ce88eca9698f0f8e1dbbe0eb4941df6a3baf59b2bed4d3f07e0e4bbfd"
+      "bytes": 355,
+      "sha256": "9b8a09b527f2dae6c28e13c05ac537fe998952f5c32deca05171f6861d106cc2"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 1255,
+      "sha256": "1c0dcff4115af9c8b5f5ed4198e415b3a61934ced936b1e09bf0b181dad4598b"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -55,13 +65,13 @@
     },
     {
       "path": "README.fr.md",
-      "bytes": 5615,
-      "sha256": "3179298140f18c62b32c90fa3fd9f890a62369663d4c98e06491611b90ad56a0"
+      "bytes": 5660,
+      "sha256": "24a1563be875d28b72f5685369170c27bd5b8ec264b5fe1e891e34ab88572bdd"
     },
     {
       "path": "README.md",
-      "bytes": 5263,
-      "sha256": "86b7ee94035f08248ce86f19980855c9d6948ed890c1b6e6c54b58ad775742d4"
+      "bytes": 5309,
+      "sha256": "89a80b052755df75f971367cf2140ed74c1dbbcf49e93cd270f47713f1439657"
     },
     {
       "path": "docs/CONCEPTION.md",
@@ -70,13 +80,13 @@
     },
     {
       "path": "docs/DEVELOPPEMENT.md",
-      "bytes": 4726,
-      "sha256": "8b0faceb50b2b3865caca43b07d3ce4671f7c63fc6597df096e82f9efc1b9c22"
+      "bytes": 4784,
+      "sha256": "bc71c24b0ddaf07ed7d50dc9d8f7769c3a098c4b1752f255d6b635b53f68c9ed"
     },
     {
       "path": "docs/GUIDE_CREALITY_PRINT.md",
-      "bytes": 10936,
-      "sha256": "2c4b5be47559fceefd4952d2ee783b68b0618c8c2d63e794327c0f35caa16488"
+      "bytes": 10918,
+      "sha256": "ec7d2127a4aac054bddd044c14843ffee32545724a4969f06c380a930d9c1f36"
     },
     {
       "path": "docs/HISTORIQUE.md",
@@ -100,8 +110,8 @@
     },
     {
       "path": "docs/en/PRINTING_AND_ASSEMBLY.md",
-      "bytes": 5979,
-      "sha256": "75c24b37b2f9f884054ec124fe6b8c3ce4acfe77cdd65f3bc1258c709d2dbe6b"
+      "bytes": 7310,
+      "sha256": "96e2173691757317acbbb867ac7665a84e2c1d81965fa94cb79d568bfb3e7992"
     },
     {
       "path": "docs/images/creality/01_projet_ouvert.jpg",
@@ -195,8 +205,8 @@
     },
     {
       "path": "scripts/render_cablage.py",
-      "bytes": 5834,
-      "sha256": "45553da79eee9271af4fb502d33c53d1629b715fbf323d91ea508345f2b9d796"
+      "bytes": 5771,
+      "sha256": "74e89f69235177d0ceaf4262ce16cdc6f448497c480fadf4232ce36b9e7104ac"
     },
     {
       "path": "scripts/render_came.py",
@@ -210,8 +220,8 @@
     },
     {
       "path": "scripts/schema_eclairage.py",
-      "bytes": 7938,
-      "sha256": "8e1458f0977f44fdeae7987d5562d77632348c166fe1508b0f0be741eba917f4"
+      "bytes": 7657,
+      "sha256": "c3ebf9ecac1a7c0348962b545a0ccce94306808a8f3068eedcc7550cb42ccc16"
     },
     {
       "path": "scripts/trancher_creality_print.py",
@@ -305,8 +315,8 @@
     },
     {
       "path": "tardis_v8/README.md",
-      "bytes": 21408,
-      "sha256": "c611387bdc4e554c682f7f46c8d1116a6f2417c0194e3a966cbe157dac8271fe"
+      "bytes": 21609,
+      "sha256": "59313036c0434b74b590f7a8202b97a948444c7ae172aa77706b4c3c04d61dc3"
     },
     {
       "path": "tardis_v8/assemblage_couleur_reference.3mf",
@@ -330,13 +340,18 @@
     },
     {
       "path": "tardis_v8/esphome/chatiere-tardis.yaml",
-      "bytes": 4105,
-      "sha256": "12d81475023c9bd86e162190d5f350a4f92343998485a7e8a508af547ec948f0"
+      "bytes": 4354,
+      "sha256": "b5bd04216d83904ca89acff859e87d763f6d4539f1ac138acb1c6eae1eb62b05"
+    },
+    {
+      "path": "tardis_v8/esphome/secrets.yaml.example",
+      "bytes": 527,
+      "sha256": "990ee4262dd976ed2d36055441b5f7347679753dfdd72f30177eecfca3a7b7c6"
     },
     {
       "path": "tardis_v8/generate.py",
-      "bytes": 59642,
-      "sha256": "21fe47047965f6d8374ad716615199aaa7e5cb4fbf3db120f6bfa1bb3ed68a1d"
+      "bytes": 59628,
+      "sha256": "c7e31cce002b602b52f16150bed096fc26d119c8739f78372ed3caa5f3e155a6"
     },
     {
       "path": "tardis_v8/images/aimants_capteur.jpg",
@@ -345,8 +360,8 @@
     },
     {
       "path": "tardis_v8/images/cablage_rgb.jpg",
-      "bytes": 112145,
-      "sha256": "95788fd7f9b14658a27b857e3e744785d6a44f0c73b42fc17980336d668de3bf"
+      "bytes": 112101,
+      "sha256": "68e06b9e0c8553b0aff820cdb6111f01ac9c5f4248591d14a1a758b036cd0cdf"
     },
     {
       "path": "tardis_v8/images/came_rappel.jpg",

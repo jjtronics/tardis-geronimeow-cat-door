@@ -202,6 +202,6 @@ python3 scripts/trancher_creality_print.py tardis_v8
 .venv/bin/python scripts/planche_plateaux.py tardis_v8
 ```
 
-Les versions précédentes (V0 à V7 Lite) restent dans leurs dossiers pour l'historique
-([HISTORIQUE.md](HISTORIQUE.md)) ; elles ne sont plus mises à jour. Les captures
+Les versions précédentes (V0 à V7 Lite) ne font pas partie du dépôt ; leur histoire est
+racontée dans [HISTORIQUE.md](HISTORIQUE.md). Les captures
 d'écran de ce guide sont faites à la main dans Creality Print.

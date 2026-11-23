@@ -103,8 +103,34 @@ soldering iron, multimeter.
 7. **Electronics**: solder, test on the bench, ESP in its cradle, cradle in the door
    notch.
 8. **Tunnel, rear front**, M4 screws, washers, nuts, caps, TPU stops.
-9. Flash the ESPHome configuration and run at least **50 cycles** by hand in FREE and
+9. Flash the ESPHome configuration (see below) and run at least **50 cycles** by hand in FREE and
    LOCKED modes before leaving your cat alone.
+
+## Electronics (optional)
+
+| ESP32-C3 pin | Connected to |
+| --- | --- |
+| 5V, GND | both lanterns, reed switch loop (GND) |
+| GPIO 3 | front lantern data, through 330 Ω |
+| GPIO 4 | rear lantern data, through 330 Ω |
+| GPIO 5 | the two reed switches in series, to GND (internal pull-up) |
+
+A 100 nF capacitor is soldered across 5 V and GND on each LED, inside the lantern foot.
+The wiring diagram is in [`tardis_v8/images/schema_eclairage.png`](../../tardis_v8/images/schema_eclairage.png).
+
+ESPHome setup:
+
+1. Install ESPHome (Home Assistant add-on, or `pip install esphome`).
+2. Copy [`secrets.yaml.example`](../../tardis_v8/esphome/secrets.yaml.example) to
+   `secrets.yaml` next to the configuration and fill it in: Wi-Fi, API encryption key
+   (`openssl rand -base64 32`), OTA and fallback hotspot passwords. Never commit it.
+3. Plug the ESP in over USB and run `esphome run chatiere-tardis.yaml`.
+
+Home Assistant then finds two RGB lights with breathing, beacon, flash, candle and
+colour-cycle effects, a cat passage sensor, a passage counter kept across reboots, a
+"flash on passage" switch and a counter reset button. Entity names are in French
+("Lanterne avant", "Passage du chat"…); rename them in the YAML if you like. WLED also works for the lights only (two WS281x
+outputs of 1 LED on GPIO 3 and 4).
 
 The [assembly video](../../tardis_v8/visualisations/montage_complet_V8.mp4) follows this
 order, with close-ups of each mechanism (French captions).

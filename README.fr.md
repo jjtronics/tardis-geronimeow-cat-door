@@ -100,7 +100,7 @@ Tout le modèle est généré par code : changer un paramètre de `tardis_v8/gen
 ## Contribuer
 
 Retours d'impression, photos, mesures de jeux et corrections sont les bienvenus. Voir
-[CONTRIBUTING.md](CONTRIBUTING.md).
+[CONTRIBUTING.md](CONTRIBUTING.md) et le [code de conduite](CODE_OF_CONDUCT.md).
 
 ## Sécurité
 

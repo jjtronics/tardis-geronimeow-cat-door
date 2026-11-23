@@ -1,4 +1,4 @@
-"""Schema electrique de l'eclairage RGB de la V7 Lite.
+"""Schema electrique de l'eclairage RGB et du capteur de passage (V8).
 
     .venv/bin/python scripts/schema_eclairage.py tardis_v8
 
@@ -6,25 +6,24 @@ ESP32-C3 SuperMini alimente par USB-C, deux LED WS2812B 5 mm (lanternes avant et
 arriere), une resistance de 330 ohms sur chaque ligne de donnees cote ESP et un
 condensateur de 100 nF au pied de chaque LED. Ecrit <version>/images/schema_eclairage.png.
 """
-import json, sys
+import sys
 from PIL import Image, ImageDraw, ImageFont
 
 BOLD = '/System/Library/Fonts/Supplemental/Arial Bold.ttf'
 FONT = '/System/Library/Fonts/Supplemental/Arial.ttf'
 BG, INK, MUTED = (250, 248, 244), (30, 34, 40), (110, 110, 110)
 BLUE, RED, BLACK, DATA, DATA2 = (18, 58, 99), (200, 40, 30), (25, 25, 25), (235, 120, 10), (150, 60, 170)
-V8 = any('cam_rises' in json.load(open(f'{v}/verification.json'))['parameters'] for v in sys.argv[1:])
-W, H = 1500, 960 if V8 else 860
+W, H = 1500, 960
 im = Image.new('RGB', (W, H), BG); d = ImageDraw.Draw(im)
 f_title, f_big, f, f_small = (ImageFont.truetype(BOLD, 30), ImageFont.truetype(BOLD, 22),
                               ImageFont.truetype(FONT, 19), ImageFont.truetype(FONT, 16))
 
-d.text((40, 26), ('Éclairage RGB et capteur de passage de la V8' if V8 else 'Éclairage RGB de la V7 Lite') + ' : schéma de câblage', font=f_title, fill=BLUE)
+d.text((40, 26), 'Éclairage RGB et capteur de passage de la V8 : schéma de câblage', font=f_title, fill=BLUE)
 d.text((40, 70), 'Tout se soude sur l\'ESP, sauf les condensateurs, soudés sur les pattes de chaque LED.',
        font=f, fill=MUTED)
 
 # ESP32-C3 SuperMini et son USB-C.
-ex0, ey0, ex1, ey1 = 250, 220, 470, 715 if V8 else 640
+ex0, ey0, ex1, ey1 = 250, 220, 470, 715
 d.rounded_rectangle((ex0, ey0, ex1, ey1), 14, fill=(30, 110, 60), outline=INK, width=3)
 d.text(((ex0 + ex1) / 2, ey0 + 40), 'ESP32-C3', font=f_big, fill='white', anchor='mm')
 d.text(((ex0 + ex1) / 2, ey0 + 68), 'SuperMini', font=f, fill='white', anchor='mm')
@@ -36,8 +35,7 @@ d.text((60, 498), 'chargeur 5 V, 1 A', font=f, fill=MUTED)
 d.text((60, 522), 'fenêtre au bas de la', font=f, fill=MUTED)
 d.text((60, 546), 'façade arrière', font=f, fill=MUTED)
 pins = {'5V': 280, 'GND': 340, 'GPIO 3': 470, 'GPIO 4': 560}
-if V8:
-    pins['GPIO 5'] = 640
+pins['GPIO 5'] = 640
 for name, y in pins.items():
     d.ellipse((ex1 - 9, y - 9, ex1 + 9, y + 9), fill=(230, 200, 120), outline=INK, width=2)
     d.text((ex1 - 18, y), name, font=f_big, fill='white', anchor='rm')
@@ -107,27 +105,25 @@ d.text((972, 396), 'environ 60 cm par lanterne', font=f_small, fill=INK, anchor=
 d.text((972, 424), 'dans la rainure de la façade', font=f_small, fill=INK, anchor='mm')
 
 GREEN = (30, 150, 70)
-if V8:
-    # Capteur de passage : deux ILS en serie entre GPIO 5 (rappel interne au 3,3 V) et la masse.
-    def reed(x, y, label):
-        d.rounded_rectangle((x, y - 16, x + 90, y + 16), 14, fill=(225, 242, 246), outline=INK, width=2)
-        d.line((x - 10, y, x + 38, y), fill=GREEN, width=4); d.line((x + 52, y - 6, x + 100, y), fill=GREEN, width=4)
-        d.text((x + 45, y - 24), label, font=f_small, fill=INK, anchor='mb')
-    y5 = 760
-    route([(ex1 + 9, pins['GPIO 5']), (530, pins['GPIO 5']), (530, y5), (550, y5)], GREEN)
-    reed(560, y5, 'ILS gauche'); route([(660, y5), (670, y5)], GREEN)
-    reed(680, y5, 'ILS droit'); route([(780, y5), (bxg, y5), (bxg, rear['GND'])], GREEN)
-    d.ellipse((bxg - 6, rear['GND'] - 6, bxg + 6, rear['GND'] + 6), fill=INK)
-    d.rounded_rectangle((900, 735, 1420, 790), 10, fill=(234, 247, 238), outline=(120, 190, 140), width=2)
-    d.text((1160, 762), 'dans le linteau, fermés par les aimants des battants', font=f_small, fill=INK, anchor='mm')
+# Capteur de passage : deux ILS en serie entre GPIO 5 (rappel interne au 3,3 V) et la masse.
+def reed(x, y, label):
+    d.rounded_rectangle((x, y - 16, x + 90, y + 16), 14, fill=(225, 242, 246), outline=INK, width=2)
+    d.line((x - 10, y, x + 38, y), fill=GREEN, width=4); d.line((x + 52, y - 6, x + 100, y), fill=GREEN, width=4)
+    d.text((x + 45, y - 24), label, font=f_small, fill=INK, anchor='mb')
+y5 = 760
+route([(ex1 + 9, pins['GPIO 5']), (530, pins['GPIO 5']), (530, y5), (550, y5)], GREEN)
+reed(560, y5, 'ILS gauche'); route([(660, y5), (670, y5)], GREEN)
+reed(680, y5, 'ILS droit'); route([(780, y5), (bxg, y5), (bxg, rear['GND'])], GREEN)
+d.ellipse((bxg - 6, rear['GND'] - 6, bxg + 6, rear['GND'] + 6), fill=INK)
+d.rounded_rectangle((900, 735, 1420, 790), 10, fill=(234, 247, 238), outline=(120, 190, 140), width=2)
+d.text((1160, 762), 'dans le linteau, fermés par les aimants des battants', font=f_small, fill=INK, anchor='mm')
 
-y = 840 if V8 else 720
+y = 840
 d.line((40, y - 20, W - 40, y - 20), fill=(215, 210, 200), width=2)
 legend = [(RED, '5 V'), (BLACK, 'masse'), (DATA, 'données avant (GPIO 3)'), (DATA2, 'données arrière (GPIO 4)')]
-if V8:
-    legend.append((GREEN, 'capteur (GPIO 5)'))
+legend.append((GREEN, 'capteur (GPIO 5)'))
 for i, (color, text) in enumerate(legend):
-    x = 40 + i * (285 if V8 else 300)
+    x = 40 + i * 285
     d.line((x, y + 12, x + 46, y + 12), fill=color, width=6)
     d.text((x + 58, y + 12), text, font=f, fill=INK, anchor='lm')
 d.text((40, y + 50), 'Brochage de la LED : se fier au schéma du vendeur (l\'ordre des pattes varie selon le modèle).',

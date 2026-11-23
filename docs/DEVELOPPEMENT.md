@@ -91,7 +91,8 @@ annotées.
 
 ```sh
 pip install esphome
-esphome config tardis_v8/esphome/chatiere-tardis.yaml   # avec un secrets.yaml à côté
+cp tardis_v8/esphome/secrets.yaml.example tardis_v8/esphome/secrets.yaml   # puis le remplir
+esphome config tardis_v8/esphome/chatiere-tardis.yaml
 ```
 
 ## Gestion des fichiers

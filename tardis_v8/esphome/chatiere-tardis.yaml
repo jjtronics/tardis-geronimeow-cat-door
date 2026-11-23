@@ -6,7 +6,7 @@
 #   GPIO 5 : boucle des deux ILS en série vers la masse (rappel interne)
 #
 # Installation : copier ce fichier dans ESPHome (module Home Assistant ou
-# « pip install esphome »), créer secrets.yaml avec wifi_ssid et wifi_password,
+# « pip install esphome »), copier secrets.yaml.example en secrets.yaml et le remplir,
 # puis « esphome run chatiere-tardis.yaml », carte branchée en USB.
 
 substitutions:
@@ -24,15 +24,21 @@ esp32:
 logger:
 
 api:
+  encryption:
+    key: !secret api_encryption_key
 
 ota:
   - platform: esphome
+    password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
+  # Point d'acces de secours, protege : sans lui, n'importe qui a portee pourrait
+  # reconfigurer le Wi-Fi de la chatiere.
   ap:
     ssid: "Chatiere-TARDIS"
+    password: !secret ap_password
 
 captive_portal:
 

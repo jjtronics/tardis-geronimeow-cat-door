@@ -1,4 +1,4 @@
-"""Figures du cablage de l'eclairage RGB (V7 Lite).
+"""Figures du cablage de l'eclairage RGB et du capteur de passage (V8).
 
     /Applications/Blender.app/Contents/MacOS/Blender --background --python scripts/render_cablage.py -- tardis_v8
 
@@ -17,8 +17,8 @@ bpy.ops.wm.open_mainfile(filepath=str(next(version.glob('tardis_*.blend'))))
 P = json.loads((version / 'verification.json').read_text())['parameters']
 H, D = P['opening_height'], P['door_depth']
 scene = bpy.context.scene
-LZ = H + 61; V8 = 'cam_rises' in P
-GX, GZT, GZB = (101., H + 40, -9.) if V8 else (101., H + 6, -7.)
+LZ = H + 61
+GX, GZT, GZB = 101., H + 40, -9.
 ESP_TOP = -P['tunnel_wall'] - .3; FLOOR = ESP_TOP - P['esp_box_height'] + 1.6
 
 
@@ -60,11 +60,10 @@ rear = [(0, D + 6, LZ + 3), (0, yr, LZ + 3), (0, yr, GZT), (-GX, yr, GZT), (-GX,
         (-13, D - 3, GZB), (-8, 16, FLOOR + 2.6)]
 wires = [wire('fil lanterne avant', front, ORANGE), wire('fil lanterne arriere', rear, RED)]
 GREEN = mat('fil capteur', (.1, .7, .25), emit=.5)
-if V8:
-    # Boucle des deux ILS (V8) : sous le linteau, puis avec le cable avant.
-    rx = P['magnet_x'] + P['reed_length']
-    wires.append(wire('fil capteur', [(-rx, -1.6, H + 3), (GX - 1.2, -1.6, H + 3), (GX - 1.2, -1.6, GZB + 1.2),
-                                     (11, -1.6, GZB + 1.2), (11, 3, GZB + 1.2), (5, 14, FLOOR + 2.6)], GREEN, .6))
+# Boucle des deux ILS : sous le linteau, puis avec le cable avant.
+rx = P['magnet_x'] + P['reed_length']
+wires.append(wire('fil capteur', [(-rx, -1.6, H + 3), (GX - 1.2, -1.6, H + 3), (GX - 1.2, -1.6, GZB + 1.2),
+                                 (11, -1.6, GZB + 1.2), (11, 3, GZB + 1.2), (5, 14, FLOOR + 2.6)], GREEN, .6))
 board = cube('carte ESP32-C3', (-9, 17, FLOOR + 1), (9, 39.4 - 1.6 - .8, FLOOR + 2.6), PCB)
 usb = cube('prise USB-C', (-4.5, 39.4 - 1.6 - 7.5, FLOOR + 2.6), (4.5, 39.4 - 1.6 + .2, FLOOR + 5.8), STEEL)
 plug = cube('fiche USB-C', (-4.1, D - 1.4, FLOOR + 2.8), (4.1, D + 12, FLOOR + 5.6), STEEL)
