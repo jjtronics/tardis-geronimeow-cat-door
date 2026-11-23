@@ -1,6 +1,6 @@
 # TARDIS Geronimeow V8 — guide complet
 
-**[English version](README.en.md)** · [Accueil du projet](../README.fr.md)
+**[English version](README.en.md)** · [Accueil du projet](../README.md)
 
 La V8 est la version actuelle de la chatière :
 

@@ -2,8 +2,8 @@
   "date": "2026-11-23",
   "repository": "jjtronics/tardis-geronimeow-cat-door",
   "current_version": "V8",
-  "file_count": 205,
-  "total_bytes": 90943143,
+  "file_count": 204,
+  "total_bytes": 90944157,
   "excluded_generated_directories": [
     "montage_frames",
     "montage_legende",
@@ -64,14 +64,9 @@
       "sha256": "1fe78373a4865c4822f789ac07f9ed063edd89f23da00ea38a8ae83eb3398660"
     },
     {
-      "path": "README.fr.md",
-      "bytes": 8215,
-      "sha256": "a9c8c9f90d783bf2e3726f73c4c2d3124b6acd363f78e8aae557443b0c688484"
-    },
-    {
       "path": "README.md",
-      "bytes": 7940,
-      "sha256": "babb3dd3cd06196eca320944ff1febb47a2ff889bfeb5db6f33017c369ac5f67"
+      "bytes": 17156,
+      "sha256": "c42b58c989c4d0e5b6e5b4a7e8df27303844194c45b7aff52ccb44ac928da447"
     },
     {
       "path": "docs/CONCEPTION.md",
@@ -400,13 +395,13 @@
     },
     {
       "path": "tardis_v8/README.en.md",
-      "bytes": 17515,
-      "sha256": "2ce9417a602af8078aadd53be4bc59f0c7f4f49b25d9e47929dddd06bf14de3a"
+      "bytes": 17531,
+      "sha256": "542baa7ef5abe85a8f0019da423e4ff970d13093b2281999a9391d3f35951b5e"
     },
     {
       "path": "tardis_v8/README.md",
-      "bytes": 21686,
-      "sha256": "1145190c0f6d3e7735861f2b3e26f1b9fc0795b3a24d05d316ba1abc88f363a9"
+      "bytes": 21683,
+      "sha256": "fbf09253fd1728e8b79d5bdaa528dfda4827a719bfe52927625d4e9be84182f6"
     },
     {
       "path": "tardis_v8/assemblage_couleur_reference.3mf",

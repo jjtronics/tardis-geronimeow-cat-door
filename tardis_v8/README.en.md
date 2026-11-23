@@ -1,6 +1,6 @@
 # TARDIS Geronimeow V8 — full guide
 
-**[Version française](README.md)** · [Project home](../README.md)
+**[Version française](README.md)** · [Project home](../README.md#english-version)
 
 V8 is the current version of the cat door:
 
