@@ -2,8 +2,8 @@
   "date": "2026-11-23",
   "repository": "jjtronics/tardis-geronimeow-cat-door",
   "current_version": "V8",
-  "file_count": 204,
-  "total_bytes": 90944839,
+  "file_count": 205,
+  "total_bytes": 90949220,
   "excluded_generated_directories": [
     "montage_frames",
     "montage_legende",
@@ -40,8 +40,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 356,
-      "sha256": "a91da67b78516b9d1d2f60a9f67da6b09d3dca33a1c5d73cd7667b5d1166515b"
+      "bytes": 415,
+      "sha256": "657b271e832ba67e4dfa2db07ea1239dce6f593c8ee325b11bb1cd75f58dd910"
     },
     {
       "path": "CODE_OF_CONDUCT.md",
@@ -75,8 +75,8 @@
     },
     {
       "path": "docs/DEVELOPPEMENT.md",
-      "bytes": 5422,
-      "sha256": "ac6d24e15b908cfa59e56432be609467af69c236098ef72791ab0c5bd09c6a56"
+      "bytes": 6755,
+      "sha256": "472b09d90bd821db662e3c632a39f05859739f49c9274f0659f7cfa7c23b4c12"
     },
     {
       "path": "docs/GUIDE_CREALITY_PRINT.md",
@@ -85,8 +85,8 @@
     },
     {
       "path": "docs/HISTORIQUE.md",
-      "bytes": 18932,
-      "sha256": "01418781dd7d67b330aa42f320735a33f44f4cd76de3097639f7f4647ff46d84"
+      "bytes": 19462,
+      "sha256": "3bf471b9e3e8204ecc923db2b30400e65752121b362ff3b44f0bcfaf3d66c550"
     },
     {
       "path": "docs/IMPRESSION_ET_MONTAGE.md",
@@ -115,8 +115,8 @@
     },
     {
       "path": "docs/en/DEVELOPMENT.md",
-      "bytes": 5160,
-      "sha256": "cf97db8b386d41c37b8e6f904cb3e26385e439f59d0fce0f0051e0a4109d2db9"
+      "bytes": 6410,
+      "sha256": "7e498f2e14b1e8bc36a52208a24c6b476a5f1e9f133ada41d0e0ffa4672568d0"
     },
     {
       "path": "docs/en/PRINTING_AND_ASSEMBLY.md",
@@ -217,6 +217,11 @@
       "path": "scripts/annoter_captures.py",
       "bytes": 5137,
       "sha256": "5dca3af9fa089b48d6a5d0389c0c16176b660c0dbc673e87b891e70682844995"
+    },
+    {
+      "path": "scripts/archives_release.py",
+      "bytes": 1209,
+      "sha256": "4a748397238e8fd89add37c254992beba77cb2662e3ead1aa5e5389f77bff495"
     },
     {
       "path": "scripts/audit_tours.py",

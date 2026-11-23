@@ -17,3 +17,6 @@ __pycache__/
 
 # Secrets ESPHome (garder seulement secrets.yaml.example)
 secrets.yaml
+
+# Archives de release (scripts/archives_release.py)
+dist/

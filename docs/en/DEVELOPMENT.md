@@ -106,12 +106,43 @@ cp tardis_v8/esphome/secrets.yaml.example tardis_v8/esphome/secrets.yaml   # the
 esphome config tardis_v8/esphome/chatiere-tardis.yaml
 ```
 
+## Publishing
+
+The project is published as **TARDIS Geronimeow**:
+[github.com/jjtronics/tardis-geronimeow-cat-door](https://github.com/jjtronics/tardis-geronimeow-cat-door)
+(public, Discussions enabled, social preview `docs/images/couverture.jpg`).
+
+Work happens in the maintainer's repository, which keeps the full design history. The
+public repository receives an identical copy with a clean, light history. Both folders
+sit side by side: `CHATIERE/` (work) and `tardis-geronimeow-cat-door/` (publication).
+To publish the current state:
+
+```sh
+cd ../tardis-geronimeow-cat-door
+git pull
+git rm -rq . && git -C ../CHATIERE archive HEAD | tar -x -C .
+git add -A && git commit -m "…" && git push
+diff <(git ls-files | sort) <(git -C ../CHATIERE ls-files | sort)   # must be empty
+```
+
+When the plates, STL files or ESPHome configuration change, rebuild the archives and
+attach them to a release (`--clobber` replaces those of an existing release):
+
+```sh
+python3 scripts/archives_release.py v8
+gh release upload v8.0 -R jjtronics/tardis-geronimeow-cat-door --clobber dist/*.zip
+```
+
+Before each publication: run the [checks](#checks), check the documentation links, and
+keep the French and English documentation in step.
+
 ## Files
 
 The repository only contains V8; earlier iterations are described (in French) in
 [HISTORIQUE.md](../HISTORIQUE.md).
 
-Git ignores intermediate images (`montage_frames/`, `montage_legende*/`), ESPHome
+Git ignores intermediate images (`montage_frames/`, `montage_legende*/`), release
+archives (`dist/`), ESPHome
 secrets (`secrets.yaml`), `.blend1` backups, logs and caches. Blender models, STL, 3MF,
 renders, GIF and MP4 are versioned.
 

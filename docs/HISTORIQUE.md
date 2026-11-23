@@ -308,6 +308,13 @@ Le projet prend le nom public **TARDIS Geronimeow** (dépôt
 - configuration ESPHome sécurisée (API chiffrée, mots de passe OTA et point d'accès) ;
 - code de conduite, guide de contribution, modèles d'issues et de pull request.
 
+Le 23 novembre 2026, après une dernière relecture (badges, cohérence de la FAQ), le
+dépôt `jjtronics/tardis-geronimeow-cat-door` est passé en **public**, avec la release
+**v8.0** (archives 3MF, STL et ESPHome), les Discussions ouvertes et la couverture comme
+aperçu social. Le README réunit un sommaire, la version française puis la version
+anglaise. Le dossier local de publication porte le nom du dépôt ; la procédure de
+synchronisation et de release est décrite dans [DEVELOPPEMENT.md](DEVELOPPEMENT.md#publier).
+
 ## Ce qui reste à confirmer
 
 Les validations sont numériques. Aucune impression complète ou pose réelle n'a

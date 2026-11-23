@@ -103,13 +103,43 @@ cp tardis_v8/esphome/secrets.yaml.example tardis_v8/esphome/secrets.yaml   # pui
 esphome config tardis_v8/esphome/chatiere-tardis.yaml
 ```
 
+## Publier
+
+Le projet est publié sous le nom **TARDIS Geronimeow** :
+[github.com/jjtronics/tardis-geronimeow-cat-door](https://github.com/jjtronics/tardis-geronimeow-cat-door)
+(public, Discussions ouvertes, aperçu social `docs/images/couverture.jpg`).
+
+Le travail se fait dans le dépôt du mainteneur, qui garde tout l'historique de
+conception. Le dépôt public en reçoit une copie à l'identique, avec un historique
+propre et léger. Les deux dossiers sont côte à côte : `CHATIERE/` (travail) et
+`tardis-geronimeow-cat-door/` (publication). Pour publier l'état courant :
+
+```sh
+cd ../tardis-geronimeow-cat-door
+git pull
+git rm -rq . && git -C ../CHATIERE archive HEAD | tar -x -C .
+git add -A && git commit -m "…" && git push
+diff <(git ls-files | sort) <(git -C ../CHATIERE ls-files | sort)   # doit être vide
+```
+
+Quand les plateaux, les STL ou la configuration ESPHome changent, refaire les archives
+et les joindre à une release (`--clobber` remplace celles d'une release existante) :
+
+```sh
+python3 scripts/archives_release.py v8
+gh release upload v8.0 -R jjtronics/tardis-geronimeow-cat-door --clobber dist/*.zip
+```
+
+Avant chaque publication : contrôles de [Contrôles](#contrôles), liens de la
+documentation, et documentation française et anglaise tenues à jour ensemble.
+
 ## Gestion des fichiers
 
 Le dépôt ne contient que la V8 ; les itérations précédentes sont racontées dans
 [HISTORIQUE.md](HISTORIQUE.md).
 
 Git ignore les images intermédiaires (`montage_frames/`, `montage_legende*/`), les
-secrets ESPHome (`secrets.yaml`), les sauvegardes `.blend1`, les journaux et les
+archives de release (`dist/`), les secrets ESPHome (`secrets.yaml`), les sauvegardes `.blend1`, les journaux et les
 caches. Les modèles Blender, STL, 3MF, rendus, GIF et MP4 sont versionnés.
 
 Après une régénération, actualiser l'inventaire SHA-256 :
