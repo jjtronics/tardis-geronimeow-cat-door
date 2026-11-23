@@ -2,8 +2,8 @@
   "date": "2026-11-23",
   "repository": "jjtronics/tardis-geronimeow-cat-door",
   "current_version": "V8",
-  "file_count": 180,
-  "total_bytes": 54674730,
+  "file_count": 205,
+  "total_bytes": 90943143,
   "excluded_generated_directories": [
     "montage_frames",
     "montage_legende",
@@ -40,8 +40,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 355,
-      "sha256": "9b8a09b527f2dae6c28e13c05ac537fe998952f5c32deca05171f6861d106cc2"
+      "bytes": 356,
+      "sha256": "a91da67b78516b9d1d2f60a9f67da6b09d3dca33a1c5d73cd7667b5d1166515b"
     },
     {
       "path": "CODE_OF_CONDUCT.md",
@@ -50,8 +50,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2106,
-      "sha256": "636db8fd1825fdc863178996bf714ef316dc611cb1a4a2261df6d42035eb1c72"
+      "bytes": 2108,
+      "sha256": "a6fd47572d230064f644db65207215da0d88d67cf3b27e63dd4c3961ebf3507b"
     },
     {
       "path": "LICENSE-CODE",
@@ -65,38 +65,38 @@
     },
     {
       "path": "README.fr.md",
-      "bytes": 5660,
-      "sha256": "24a1563be875d28b72f5685369170c27bd5b8ec264b5fe1e891e34ab88572bdd"
+      "bytes": 8215,
+      "sha256": "a9c8c9f90d783bf2e3726f73c4c2d3124b6acd363f78e8aae557443b0c688484"
     },
     {
       "path": "README.md",
-      "bytes": 5309,
-      "sha256": "89a80b052755df75f971367cf2140ed74c1dbbcf49e93cd270f47713f1439657"
+      "bytes": 7940,
+      "sha256": "babb3dd3cd06196eca320944ff1febb47a2ff889bfeb5db6f33017c369ac5f67"
     },
     {
       "path": "docs/CONCEPTION.md",
-      "bytes": 6211,
-      "sha256": "21fc4893b3c112f40da712fdefbc8482229166c74309791047c30c70a7158cc0"
+      "bytes": 6248,
+      "sha256": "95bc748fccd72fa39f57e391954c28baf85febae2c04e25295daf1dcc9e42785"
     },
     {
       "path": "docs/DEVELOPPEMENT.md",
-      "bytes": 4784,
-      "sha256": "bc71c24b0ddaf07ed7d50dc9d8f7769c3a098c4b1752f255d6b635b53f68c9ed"
+      "bytes": 5422,
+      "sha256": "ac6d24e15b908cfa59e56432be609467af69c236098ef72791ab0c5bd09c6a56"
     },
     {
       "path": "docs/GUIDE_CREALITY_PRINT.md",
-      "bytes": 10918,
-      "sha256": "ec7d2127a4aac054bddd044c14843ffee32545724a4969f06c380a930d9c1f36"
+      "bytes": 11208,
+      "sha256": "6a70ae949d4e89b83c4ea87b75c5e3cdde483a42a7822e4dcf4fde739c85e7a4"
     },
     {
       "path": "docs/HISTORIQUE.md",
-      "bytes": 18071,
-      "sha256": "04e23aeb049d7af5bbb56dd33fda2c03115793ba59c5565787437565e58b2979"
+      "bytes": 18932,
+      "sha256": "01418781dd7d67b330aa42f320735a33f44f4cd76de3097639f7f4647ff46d84"
     },
     {
       "path": "docs/IMPRESSION_ET_MONTAGE.md",
-      "bytes": 6306,
-      "sha256": "fef67dd1f9b7d3ca00360fc8cd51c80787c5973d42dfc2f8847dc3d95d35b92f"
+      "bytes": 6637,
+      "sha256": "97798cd9cd30157b2a81ec15c2de805d93e570f9c7a1c6e66c7178f7233a82b9"
     },
     {
       "path": "docs/PROVENANCE.md",
@@ -109,34 +109,109 @@
       "sha256": "013c453be08f2d504ac865a2e8721e0ca44a2683ec88b8ef779fa8c9d8e0dcbe"
     },
     {
+      "path": "docs/en/CREALITY_PRINT_GUIDE.md",
+      "bytes": 10066,
+      "sha256": "03f0e0978af705f7701c64edc40bad4a7dccf7789bfe4a179c4d41148eaab0fa"
+    },
+    {
+      "path": "docs/en/DESIGN.md",
+      "bytes": 5571,
+      "sha256": "c90e55d3b0b0c8979460ccbe39bebe299a57d81989035083b550e935f69c44ff"
+    },
+    {
+      "path": "docs/en/DEVELOPMENT.md",
+      "bytes": 5160,
+      "sha256": "cf97db8b386d41c37b8e6f904cb3e26385e439f59d0fce0f0051e0a4109d2db9"
+    },
+    {
       "path": "docs/en/PRINTING_AND_ASSEMBLY.md",
-      "bytes": 7310,
-      "sha256": "96e2173691757317acbbb867ac7665a84e2c1d81965fa94cb79d568bfb3e7992"
+      "bytes": 7289,
+      "sha256": "6c473e828cb377aa73e544f1195be00f5f0c2d8c1e66573895c1a891f6f6ab94"
+    },
+    {
+      "path": "docs/images/couverture.jpg",
+      "bytes": 109104,
+      "sha256": "72d3ebd882049057a98ed5bfbdc2257118a7a6b3f1ada808fedfc7ce8481bc57"
+    },
+    {
+      "path": "docs/images/couverture_fr.jpg",
+      "bytes": 113437,
+      "sha256": "3fc6d25d511b08e5b352ea091e8e807b83dec892572b76e62bb90534f77dbee6"
     },
     {
       "path": "docs/images/creality/01_projet_ouvert.jpg",
-      "bytes": 200184,
-      "sha256": "9f434e2d13824bff0334579df0817d9f5dcb61dd9e535966f6b96d60329876a3"
+      "bytes": 183055,
+      "sha256": "0f0a64812abbea4ef13c6493bd11454810a5a39bba7ac14d4068cab3ce14489f"
     },
     {
       "path": "docs/images/creality/02_apercu_tranche.jpg",
-      "bytes": 204991,
-      "sha256": "f6be8ee3ac6f9c927a5bf68e86b8e09f7e3daa639813d2dd3a5009f0e5a4a223"
+      "bytes": 199330,
+      "sha256": "b62ef1cf71799a9e1422416fbfd728173cccb3c08c8ebe9a9e768a6c02232bf5"
     },
     {
       "path": "docs/images/creality/03_supports_fourreaux.jpg",
-      "bytes": 188765,
-      "sha256": "5abacea8c954f463a1b7d0eedc5ea7a5a1a5dff28afb4a7ae1d88b97a79b8679"
+      "bytes": 173251,
+      "sha256": "ac68e377eb74d7c9e01236016f2d6775cdec899e3c1eb0f04fbd73a64bd1cfd9"
     },
     {
       "path": "docs/images/creality/04_support_genere.jpg",
-      "bytes": 165680,
-      "sha256": "62f5352e224cea8f7710675ef36ec2c168c5a59d3984c0b396deda99df378067"
+      "bytes": 171848,
+      "sha256": "bd595e34c3c85f4e20b07228f2aebb0531d9efda5641f41c9618ee6cca0fcd16"
     },
     {
       "path": "docs/images/creality/05_tpu.jpg",
-      "bytes": 36831,
-      "sha256": "8a57c409176603a773e956820279b62d77c992693b8c6d47422e9f3e99e4c4a3"
+      "bytes": 62126,
+      "sha256": "1f58cc8cda5ade26a6a957adc8880a4b512c0d2fc52fcb37002783efc7a3d3eb"
+    },
+    {
+      "path": "docs/images/creality/brut/01_projet_ouvert.jpg",
+      "bytes": 224259,
+      "sha256": "a193991b6970269e82daaf27d46f10bf8060b0c8d4ad84e095d04480e651ba08"
+    },
+    {
+      "path": "docs/images/creality/brut/02_apercu_tranche.jpg",
+      "bytes": 233645,
+      "sha256": "b53d6e580532593e9c679762f729fcf0a90a49a356999087be64439803900b22"
+    },
+    {
+      "path": "docs/images/creality/brut/03_supports_fourreaux.jpg",
+      "bytes": 219574,
+      "sha256": "2ab7df749c385004d18bb0cb0aed4d6adab431f07bbcdd56d139151a1977d96d"
+    },
+    {
+      "path": "docs/images/creality/brut/04_support_genere.jpg",
+      "bytes": 256246,
+      "sha256": "a916123f5b178ce622fdc9438b0e50206a383f7962b5d9f929464f9910c65908"
+    },
+    {
+      "path": "docs/images/creality/brut/05_tpu.jpg",
+      "bytes": 39710,
+      "sha256": "a475dbfd6f2eedf9ced24c8b69218d6b1bf3a37b466a8511b837691881d05b2e"
+    },
+    {
+      "path": "docs/images/creality/en/01_projet_ouvert.jpg",
+      "bytes": 182103,
+      "sha256": "44a1dff811c052c28282be5f1d8b93692f63bb0ebf0bd25c098927ee21af2b4b"
+    },
+    {
+      "path": "docs/images/creality/en/02_apercu_tranche.jpg",
+      "bytes": 195008,
+      "sha256": "32cf95710172aec6dadcabe772fb3cf6c3c47e0acff5cee08ab3febcc2dcee06"
+    },
+    {
+      "path": "docs/images/creality/en/03_supports_fourreaux.jpg",
+      "bytes": 172500,
+      "sha256": "4cd0425a6a770d5a63e232ab8d5fe73be9f2b02f5166348849a2f015c45e9649"
+    },
+    {
+      "path": "docs/images/creality/en/04_support_genere.jpg",
+      "bytes": 171076,
+      "sha256": "15d7dea705b5eb74bd2c06b32d220ea649a83884fe61564a4a0da9c5eafffbeb"
+    },
+    {
+      "path": "docs/images/creality/en/05_tpu.jpg",
+      "bytes": 62155,
+      "sha256": "59e6f99f46b6ca02229d104d247c910870adef4214adb39d51ce92813d4adffc"
     },
     {
       "path": "requirements-tools.txt",
@@ -144,9 +219,19 @@
       "sha256": "7b5872ecb026feb7f77b38ad079724e16b2e816042669f69635275580765b8e2"
     },
     {
+      "path": "scripts/annoter_captures.py",
+      "bytes": 5137,
+      "sha256": "5dca3af9fa089b48d6a5d0389c0c16176b660c0dbc673e87b891e70682844995"
+    },
+    {
       "path": "scripts/audit_tours.py",
       "bytes": 1858,
       "sha256": "7f6eda12c7894c3ffb86d22b8c57f29bbfe6f6658be39faa24ea388173c9259d"
+    },
+    {
+      "path": "scripts/couverture.py",
+      "bytes": 3471,
+      "sha256": "339104ce97b96aac624d69467dcce6347abc34ec8bf74c37226fdefa2507aed2"
     },
     {
       "path": "scripts/exporter_projets_creality.py",
@@ -314,9 +399,14 @@
       "sha256": "c92e8381e03cc9e8eba634f1e13951cfcebbdd5949fa7ac41b7002c8babf3859"
     },
     {
+      "path": "tardis_v8/README.en.md",
+      "bytes": 17515,
+      "sha256": "2ce9417a602af8078aadd53be4bc59f0c7f4f49b25d9e47929dddd06bf14de3a"
+    },
+    {
       "path": "tardis_v8/README.md",
-      "bytes": 21609,
-      "sha256": "59313036c0434b74b590f7a8202b97a948444c7ae172aa77706b4c3c04d61dc3"
+      "bytes": 21686,
+      "sha256": "1145190c0f6d3e7735861f2b3e26f1b9fc0795b3a24d05d316ba1abc88f363a9"
     },
     {
       "path": "tardis_v8/assemblage_couleur_reference.3mf",
@@ -860,23 +950,28 @@
     },
     {
       "path": "tardis_v8/visualisations/README.md",
-      "bytes": 2135,
-      "sha256": "6bb696c0d49b8d21629c71d5a269c96cff3766ab6078bcfde409ab31d84333ea"
+      "bytes": 2303,
+      "sha256": "ea215d291a33f747dacae8d0d70132815e8b5c820292fa9d9fd5fa0c4fd1a91e"
     },
     {
       "path": "tardis_v8/visualisations/compose_montage.py",
-      "bytes": 7097,
-      "sha256": "8986a15fd5654ea0449ab80603e302cb8d8416c687c8bc3565d89fd3fa5bd03f"
+      "bytes": 13973,
+      "sha256": "6afd611682c6a05655acde2a42bef5f2faa566fad6b1ed6a6fb00f7e720057e8"
     },
     {
       "path": "tardis_v8/visualisations/export_animation.json",
-      "bytes": 637,
-      "sha256": "ad2504599e7032c40e751e1de003b60da86703aa2b66d3ce29a44318b57a2aa9"
+      "bytes": 632,
+      "sha256": "1e7a0ebc86a9621c98d48e38c4a3e0858bd3ffae642e320830910173930bf3e5"
+    },
+    {
+      "path": "tardis_v8/visualisations/export_animation_en.json",
+      "bytes": 585,
+      "sha256": "2b5b090e40424e55f620fb44541fc2f013fb1128cd9620ff589f4a6092b18fb1"
     },
     {
       "path": "tardis_v8/visualisations/montage.json",
-      "bytes": 134309,
-      "sha256": "6c8d2f39217789cf82e47a3741ec102b5d3d710835a11e59e629adc8425ac09d"
+      "bytes": 134311,
+      "sha256": "f3f2baabd6c8365628f2a5e40b38f45c495e74e568ab01810441f8cd225a1cb3"
     },
     {
       "path": "tardis_v8/visualisations/montage_apercu_cames.png",
@@ -884,34 +979,64 @@
       "sha256": "792d0c86b67ac5315be63bde8cd69864da949e5ebc11aac91d6f6e6a7c1441a6"
     },
     {
+      "path": "tardis_v8/visualisations/montage_apercu_cames_en.png",
+      "bytes": 611919,
+      "sha256": "018dc261d724c96379ed56acb29b3e35909179a783c9035ef66504e9693f8806"
+    },
+    {
       "path": "tardis_v8/visualisations/montage_apercu_eclate.png",
-      "bytes": 704823,
-      "sha256": "2a1b0e6a64192c11d2cb658500d999d4318ac0a9a0399ecb4e7eca6c308eb539"
+      "bytes": 704830,
+      "sha256": "9c0b0e48dcaa4a45b32c3d563f1f24a03f34f159010f95b4128e6d29334b7355"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_eclate_en.png",
+      "bytes": 704039,
+      "sha256": "b30ed7e72db720706beb26d0df98e24baf17fe64b98b26610cf0ed99c68797b8"
     },
     {
       "path": "tardis_v8/visualisations/montage_apercu_ouvert.png",
-      "bytes": 693420,
-      "sha256": "3caf7fcaed6c33ac368a26dfe4643aac717e7b41c73a0c4a1b8fda37ff075c05"
+      "bytes": 693262,
+      "sha256": "64f2e6659d1ae3bad90d8a4695c191d12e7bf0d037ff3bf8be7234a75256acdf"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_ouvert_en.png",
+      "bytes": 694478,
+      "sha256": "65b8b23105cf7a7f3778acbe894c3fd0d4bbc9d36bec9820d8b4b90e9853a8f9"
     },
     {
       "path": "tardis_v8/visualisations/montage_apercu_verrou.png",
-      "bytes": 1430346,
-      "sha256": "cb2a47bef8e0a81fb86f7fa91dd842e3cffd820d2f58b265b1e7b789b93e85df"
+      "bytes": 1430649,
+      "sha256": "ab4f5cd9a8b8dd011347e0f557d6b0a63b9bb651828590885c6fd9f774cf8c34"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_apercu_verrou_en.png",
+      "bytes": 1432169,
+      "sha256": "8022822f0addf2b5875635e1881610abc08a6ca59f3091b77019b30c87b4b5c3"
     },
     {
       "path": "tardis_v8/visualisations/montage_complet_V8.gif",
-      "bytes": 13598313,
-      "sha256": "15df946e717bfdcf5de0df6598db17eef750dcfb9f88704be095a4ea8c9dcc16"
+      "bytes": 13769245,
+      "sha256": "c9e37f645a0ed8a902aed9eed92f3217c768355673b138ba507ba5f85926e232"
     },
     {
       "path": "tardis_v8/visualisations/montage_complet_V8.mp4",
-      "bytes": 16428620,
-      "sha256": "14929d778600a54082bffd7feb5c6cedcbc0b527457ef2e85d8efd5f43f46ed0"
+      "bytes": 16699273,
+      "sha256": "7c50de75b9a19bfd8118cced375b15995dc8af985bfb82c1161b098c21e698d8"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_complet_V8_en.gif",
+      "bytes": 13725312,
+      "sha256": "85afd3a3f38e1d87135bbc52a13b1be2c550c8eca7cdc11ce64414e8b034f3a3"
+    },
+    {
+      "path": "tardis_v8/visualisations/montage_complet_V8_en.mp4",
+      "bytes": 16624833,
+      "sha256": "ffbcee99d110ef22b7b474ff73d5e3a619ab7df03db96ace2eac28dbbd973b29"
     },
     {
       "path": "tardis_v8/visualisations/render_visuals.py",
-      "bytes": 25307,
-      "sha256": "4ee05c67ba58a18590117544276b4580ec23a975972fe89bdf2e8dfebe00bdb3"
+      "bytes": 25309,
+      "sha256": "4c2b2971188250602110cf5923f5ae8b6a78e7fff1c592318ef222515efef09a"
     }
   ]
 }

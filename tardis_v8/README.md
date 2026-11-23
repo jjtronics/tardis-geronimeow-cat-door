@@ -1,6 +1,6 @@
 # TARDIS Geronimeow V8 — guide complet
 
-**[English summary](../README.md)** · [Accueil du projet](../README.fr.md)
+**[English version](README.en.md)** · [Accueil du projet](../README.fr.md)
 
 La V8 est la version actuelle de la chatière :
 
@@ -208,7 +208,8 @@ repérage de l'axe vertical.
 
 ![Montage complet de la V8](visualisations/montage_complet_V8.gif)
 
-[Vidéo MP4 du montage complet](visualisations/montage_complet_V8.mp4) (78 s, 1280 × 720) :
+[Vidéo MP4 du montage complet](visualisations/montage_complet_V8.mp4) (78 s, 1280 × 720,
+[version sous-titrée en anglais](visualisations/montage_complet_V8_en.mp4)) :
 quinze étapes, chacune avec son plan de caméra et des étiquettes sur les pièces. Les
 cames, les aimants, le capteur et le verrou sont montrés en gros plan, en vue fantôme
 (façade et battants translucides) pour voir l'intérieur. On voit aussi le passage

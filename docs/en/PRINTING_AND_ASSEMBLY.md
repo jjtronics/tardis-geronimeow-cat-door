@@ -2,10 +2,10 @@
 
 **[Version française](../IMPRESSION_ET_MONTAGE.md)**
 
-This guide covers printing, what to buy and the assembly order. The detailed French
-[V8 guide](../../tardis_v8/README.md) adds the cam tuning, wiring and ESPHome setup,
-and the [Creality Print guide](../GUIDE_CREALITY_PRINT.md) (French, with screenshots)
-shows each step in the slicer.
+This guide covers printing, what to buy and the assembly order. The full
+[V8 guide](../../tardis_v8/README.en.md) adds the cam tuning, wiring and ESPHome setup,
+and the [Creality Print guide](CREALITY_PRINT_GUIDE.md) shows each step in the slicer
+with screenshots.
 
 > **Status:** no part has been printed yet. Validate the test coupon and the 1:1
 > prototype before printing the large parts.

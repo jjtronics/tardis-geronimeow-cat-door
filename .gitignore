@@ -13,7 +13,7 @@ __pycache__/
 
 # Images de travail : les GIF, MP4 et rendus finaux restent versionnes
 **/montage_frames/
-**/montage_legende/
+**/montage_legende*/
 
 # Secrets ESPHome (garder seulement secrets.yaml.example)
 secrets.yaml

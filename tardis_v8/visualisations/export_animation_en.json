@@ -1,0 +1,27 @@
+{
+  "fps": 15,
+  "frame_count": 1170,
+  "duration_seconds": 78.0,
+  "width": 1280,
+  "height": 720,
+  "mp4": "montage_complet_V8_en.mp4",
+  "gif": "montage_complet_V8_en.gif",
+  "steps": [
+    "TARDIS Geronimeow",
+    "The parts",
+    "Adjustable cams",
+    "Flaps and axles",
+    "Wind-proof magnets",
+    "Passage sensor",
+    "The lanterns",
+    "Wires inside the fronts",
+    "ESP32 cradle",
+    "Tunnel, door and rear front",
+    "Screws, caps and stops",
+    "Central lock: LOCKED",
+    "Central lock: FREE",
+    "Passage detected",
+    "Gravity return",
+    "RGB lighting"
+  ]
+}

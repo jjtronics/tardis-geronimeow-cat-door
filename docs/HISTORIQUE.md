@@ -293,6 +293,21 @@ La V8 étant la seule version suivie, le prototype V0 et les dossiers V1 à V7 L
 été retirés du dépôt (environ 1,3 Go), ainsi que les fichiers du kit d'origine, qui
 restent cités et liés dans [PROVENANCE.md](PROVENANCE.md).
 
+## Préparation de la publication : TARDIS Geronimeow
+
+Le projet prend le nom public **TARDIS Geronimeow** (dépôt
+`tardis-geronimeow-cat-door`) :
+- licences CC BY-NC-SA 4.0 (modèles, images, documentation) et MIT (code), mention des
+  marques de la BBC, kit d'origine cité et lié mais plus redistribué ;
+- accueil bilingue avec image de couverture, FAQ et téléchargements ;
+- toute la documentation utile traduite en anglais (`tardis_v8/README.en.md`,
+  `docs/en/`), captures Creality Print refaites sur les plateaux actuels et annotées
+  dans les deux langues par script ;
+- vidéo de montage rendue à nouveau sur la géométrie actuelle, en version française et
+  anglaise ;
+- configuration ESPHome sécurisée (API chiffrée, mots de passe OTA et point d'accès) ;
+- code de conduite, guide de contribution, modèles d'issues et de pull request.
+
 ## Ce qui reste à confirmer
 
 Les validations sont numériques. Aucune impression complète ou pose réelle n'a

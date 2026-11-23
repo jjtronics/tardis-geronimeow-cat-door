@@ -32,7 +32,7 @@ been printed yet.
   mistake: open a "Problem" issue.
 - **Changes**: the geometry comes from `tardis_v8/generate.py`. Do not edit STL or 3MF
   files by hand: change the generator, regenerate, then run the checks listed in
-  [docs/DEVELOPPEMENT.md](docs/DEVELOPPEMENT.md) (`verify_geometry.py`,
+  [docs/en/DEVELOPMENT.md](docs/en/DEVELOPMENT.md) (`verify_geometry.py`,
   `verify_3mf.py`, `trancher_creality_print.py`, `audit_tours.py`) and include their
   results in your pull request.
 - **Remixes** are welcome under CC BY-NC-SA 4.0 (non-commercial, same license, credit

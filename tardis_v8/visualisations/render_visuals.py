@@ -247,7 +247,7 @@ def P(*v): return Vector(v)
 
 
 SCENES = [
-    dict(t=0, title='Chatière TARDIS · V8', text='Une chatière double action à imprimer en 3D : rappel par gravité, verrou central, capteur et lanternes RGB.',
+    dict(t=0, title='TARDIS Geronimeow', text='Une chatière TARDIS double action à imprimer en 3D : rappel par gravité, verrou central, capteur et lanternes RGB.',
          cam=(P(0, 20, 135), 28, 14, 1050), intro=True),
     dict(t=5, title='Les pièces', text='Façade avant, battants, cames, verrou, aimants, capteur, électronique, tunnel et façade arrière.',
          cam=(P(0, 20, 110), 35, 22, 1500)),

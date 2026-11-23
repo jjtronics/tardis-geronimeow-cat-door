@@ -1,5 +1,7 @@
 # Choix de conception — V8
 
+**[English version](en/DESIGN.md)**
+
 ## Passage commun et deux façades
 
 Les deux façades encadrent le même tunnel. Deux battants double action pivotent
@@ -39,9 +41,9 @@ central antipincement vaut 2,4 mm.
 ## Verrou central
 
 Une lame imprimée de 10 × 4 mm coulisse verticalement dans le seuil, au milieu, dans
-un canal guidé à 0,2 mm (0,4 mm sur la face avant, imprimée en pont). Montée, elle entre de 4 mm dans une poche au coin bas de
-chaque battant. Ces poches sont fermées devant et derrière, si bien qu'aucun battant
-ne peut tourner (blocage dès 0,5°).
+un canal guidé à 0,2 mm (0,4 mm sur la face avant, imprimée en pont). Montée, elle
+entre de 4 mm dans une poche au coin bas de chaque battant. Ces poches sont fermées
+devant et derrière, si bien qu'aucun battant ne peut tourner (blocage dès 0,5°).
 
 Un bouton vissé sur la lame (M3 × 18) sort par une fente verticale du socle. Un
 **tourniquet** pivotant (M3 × 12) se tourne d'un quart de tour sous le bouton pour le
@@ -67,9 +69,9 @@ Les lanternes reçoivent des LED WS2812B 5 mm. Sous chaque LED, le pied de la la
 est creusé d'une chambre de connexion de 9 × 13,5 mm, haute de 5 mm, ouverte dessous et
 vers l'arrière. Elle loge les pattes coudées, les soudures gainées et le condensateur
 de 100 nF. Son toit en pointe à 45° s'imprime sans pont ni support (un toit plat
-déclenchait l'avertissement « surplomb flottant » de Creality Print). Une rainure de 4,5 × 2,5 mm au dos de
-chaque façade, contre la porte, mène les câbles de la lanterne et du capteur jusqu'à
-un berceau imprimé sous le tunnel. Ce berceau loge un ESP32-C3 SuperMini, dont la prise
+déclenchait l'avertissement « surplomb flottant » de Creality Print). Une rainure de
+4,5 × 2,5 mm au dos de chaque façade, contre la porte, mène les câbles de la lanterne
+et du capteur jusqu'à un berceau imprimé sous le tunnel. Ce berceau loge un ESP32-C3 SuperMini, dont la prise
 USB-C est accessible par une fenêtre de la façade arrière. La configuration ESPHome
 fournie gère les lumières, le capteur, un compteur et un flash à chaque passage.
 

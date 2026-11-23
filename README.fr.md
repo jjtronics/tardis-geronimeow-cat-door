@@ -2,13 +2,14 @@
 
 **[English version](README.md)**
 
-*Geronimeow ! Plus grande à l'intérieur… pour les chats.*
+![TARDIS Geronimeow — plus grande à l'intérieur… pour les chats](docs/images/couverture_fr.jpg)
+
+**[Télécharger](#télécharger)** · **[Démarrage rapide](#démarrage-rapide)** · **[Guide complet](tardis_v8/README.md)** ·
+**[Liste d'achat](docs/IMPRESSION_ET_MONTAGE.md#liste-dachat)** · **[FAQ](#faq)**
 
 Une chatière en forme de cabine de police, avec une façade TARDIS **de chaque côté de
 la porte**. Elle est conçue pour une imprimante multicolore (mise au point sur une
 Creality K1 Max avec CFS) et fournie en projets Creality Print prêts à trancher.
-
-![Chatière TARDIS Geronimeow fermée](tardis_v8/01_vue_fermee.png)
 
 > [!WARNING]
 > **Prototype non encore imprimé.** Tous les plateaux se tranchent sans avertissement
@@ -34,6 +35,10 @@ Creality K1 Max avec CFS) et fournie en projets Creality Print prêts à tranche
 
 ![Animation du montage](tardis_v8/visualisations/montage_complet_V8.gif)
 
+[Vidéo complète du montage (MP4, 78 s)](tardis_v8/visualisations/montage_complet_V8.mp4) ·
+[vue fermée](tardis_v8/01_vue_fermee.png) · [vue ouverte](tardis_v8/02_vue_ouverte.png) ·
+[vue arrière](tardis_v8/03_vue_arriere_fermee.png)
+
 ## Dimensions principales
 
 | | |
@@ -55,6 +60,13 @@ Creality K1 Max avec CFS) et fournie en projets Creality Print prêts à tranche
   [liste d'achat](docs/IMPRESSION_ET_MONTAGE.md#liste-dachat).
 - Électronique en option : ESP32-C3 SuperMini, deux LED WS2812B 5 mm, deux ILS.
 
+## Télécharger
+
+- **Plateaux prêts à trancher** (projets Creality Print 3MF) et **toutes les pièces en
+  STL** : fichiers zip de la [dernière version publiée](../../releases/latest), ou
+  dossiers [`tardis_v8/3mf/`](tardis_v8/3mf/) et [`tardis_v8/stl/`](tardis_v8/stl/).
+- **Configuration ESPHome** : [`tardis_v8/esphome/`](tardis_v8/esphome/).
+
 ## Démarrage rapide
 
 1. Mesurer la porte. Les fichiers supposent **40 mm** ; les vis M4 en dépendent.
@@ -66,6 +78,39 @@ Creality K1 Max avec CFS) et fournie en projets Creality Print prêts à tranche
    [impression, fournitures et montage](docs/IMPRESSION_ET_MONTAGE.md).
 5. Faire au moins **50 cycles à la main**, dans les deux modes, avant de laisser le
    chat seul avec.
+
+## FAQ
+
+**Faut-il une imprimante Creality ?** Non. Les projets 3MF sont réglés pour une Creality
+K1 Max avec CFS et Creality Print, et devraient aussi s'ouvrir dans OrcaSlicer et
+Bambu Studio (même famille de 3MF, non testé). Avec un autre logiciel, utiliser les STL
+et les conseils d'orientation du [guide d'impression](docs/IMPRESSION_ET_MONTAGE.md#préparer-limpression).
+
+**Je n'ai qu'une imprimante monocouleur.** Ça marche : tout imprimer en bleu et peindre
+fenêtres, enseigne et boutons (les couleurs sont incrustées côte à côte sur les mêmes
+couches, une pause pour changer de filament ne suffit donc pas). La mécanique ne dépend
+pas des couleurs.
+
+**Ma porte ne fait pas 40 mm.** Modifier `door_depth` en tête de
+`tardis_v8/generate.py` et régénérer (le tunnel suit), voir
+[Développement](docs/DEVELOPPEMENT.md). Prévoir des vis M4 de la bonne longueur.
+
+**Est-ce assez grand pour mon chat ?** Le passage fait 190 × 200 mm, plus que la plupart
+des chatières du commerce. Pour un très grand chat (Maine Coon), la taille du passage
+est un paramètre, mais moulures, perçages et jeux sont alors à revérifier.
+
+**L'électronique est-elle obligatoire ?** Non. Éclairage et capteur sont facultatifs ;
+sans eux, le berceau et les rainures restent vides.
+
+**Lit-elle les puces électroniques ?** Non. Ce n'est pas une chatière sélective : en
+FERMÉ personne ne passe, en LIBRE tout le monde passe.
+
+**Le PLA tient-il dehors ?** Le PLA ramollit vers 55 °C. Sur une porte en plein soleil,
+imprimer au moins la façade extérieure en PETG ou en ASA (et vérifier les jeux avec
+l'éprouvette dans cette matière). Pas encore testé.
+
+**Puis-je vendre des impressions ?** Non. Les modèles sont sous licence non commerciale,
+et TARDIS est une marque de la BBC.
 
 ## Documentation
 
@@ -89,7 +134,7 @@ tardis_v8/
   generate.py     modèle paramétrique (Blender 5)
   images/         figures des guides
   visualisations/ vidéo et GIF de montage
-docs/             guides (en français, guide d'impression anglais dans docs/en/)
+docs/             guides en français, versions anglaises dans docs/en/
 scripts/          contrôles de tranchage, figures, export des projets Creality
 ```
 

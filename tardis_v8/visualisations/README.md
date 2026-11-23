@@ -25,6 +25,9 @@ les pièces à l'écran :
 Les images `montage_apercu_*.png` reprennent quatre moments clés pour la
 documentation.
 
+La même vidéo existe avec des sous-titres anglais : `montage_complet_V8_en.mp4`,
+`montage_complet_V8_en.gif` et `montage_apercu_*_en.png` (`compose_montage.py en`).
+
 L'animation est illustrative : la levée de la came est représentée, mais elle ne
 simule ni les frottements, ni la force des aimants, ni le collage, ni l'électronique.
 Elle est tirée des mêmes maillages que les plateaux 3MF.

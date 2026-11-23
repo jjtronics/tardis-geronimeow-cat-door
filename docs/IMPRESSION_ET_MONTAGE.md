@@ -25,6 +25,11 @@ Les petites pièces et les pièces plus hautes que larges reçoivent une bordure
 (réglage par objet) : elle se retire à la main. Les cames s'impriment en couches de
 0,1 mm, pleines.
 
+**Autres logiciels :** toutes les pièces sont dans `tardis_v8/stl/`, en position de
+montage. Les poser à plat comme sur les plateaux 3MF, côté décoré vers le haut. Les
+caches de vis se posent tête en bas, la lame du verrou et les butées TPU couchées.
+Seuls les fourreaux d'axe de la façade avant demandent des supports.
+
 ## Les 12 plateaux
 
 | Plateau | Contenu |

@@ -1,5 +1,7 @@
 # Imprimer la chatière avec Creality Print — pas à pas
 
+**[English version](en/CREALITY_PRINT_GUIDE.md)**
+
 Ce guide part d'un plateau du dépôt et va jusqu'à l'envoi à la K1 Max. Il concerne la
 [V8](../tardis_v8/README.md), la version unique de la chatière : 12 plateaux, rappel
 **par gravité, sans ressort**, cames réglables, verrou central, aimants anti-vent,
@@ -116,8 +118,9 @@ libres.
 Après impression, retirer ces supports à la pince fine. Si l'axe force dans le
 fourreau, reprendre le trou au foret Ø3,4 mm tenu à la main.
 
-Ne pas activer les supports automatiques sur les autres plateaux : le chapeau des
-lanternes passe en pont de 16 mm.
+Ne pas activer les supports automatiques sur les autres plateaux : les seuls
+surplombs restants sont des ponts courts (rainures de câbles de 4,5 mm, trous d'axe,
+anneau haut des lanternes), qui s'impriment très bien sans support.
 
 **Bordures.** Les petites pièces et celles plus hautes que larges (pions, cames, cales,
 lame et tourniquet du verrou, diffuseurs, cages) ont déjà une bordure de 5 mm dans le
@@ -202,6 +205,7 @@ python3 scripts/trancher_creality_print.py tardis_v8
 .venv/bin/python scripts/planche_plateaux.py tardis_v8
 ```
 
-Les versions précédentes (V0 à V7 Lite) ne font pas partie du dépôt ; leur histoire est
-racontée dans [HISTORIQUE.md](HISTORIQUE.md). Les captures
-d'écran de ce guide sont faites à la main dans Creality Print.
+Les captures d'écran de ce guide sont faites à la main dans Creality Print 7.3.1, puis
+annotées en français et en anglais par `scripts/annoter_captures.py` (captures brutes
+dans `docs/images/creality/brut/`). Une version plus récente de Creality Print devrait
+ouvrir les projets de la même façon, mais seule la 7.3.1 a été testée.

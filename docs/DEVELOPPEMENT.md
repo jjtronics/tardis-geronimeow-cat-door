@@ -1,5 +1,7 @@
 # Régénérer et maintenir le projet — V8
 
+**[English version](en/DEVELOPMENT.md)**
+
 ## Outils
 
 | Outil | Version utilisée |
@@ -76,7 +78,10 @@ Creality Print se vérifient à la main, plateau par plateau.
 .venv/bin/python scripts/schema_eclairage.py tardis_v8
 .venv/bin/python scripts/figure_gabarit.py tardis_v8
 /Applications/Blender.app/Contents/MacOS/Blender --background --python tardis_v8/visualisations/render_visuals.py -- montage
-python3 tardis_v8/visualisations/compose_montage.py
+python3 tardis_v8/visualisations/compose_montage.py        # sous-titres français
+python3 tardis_v8/visualisations/compose_montage.py en     # sous-titres anglais
+.venv/bin/python scripts/couverture.py                     # images de couverture
+.venv/bin/python scripts/annoter_captures.py               # captures Creality Print annotées
 ```
 
 La vidéo (78 s, 1280 × 720) est rendue image par image dans EEVEE. `render_visuals.py`
@@ -84,8 +89,11 @@ enregistre pour chaque image la position à l'écran des pièces étiquetées ;
 `compose_montage.py` ajoute titres, textes et étiquettes, puis encode le MP4 et le GIF.
 `-- test` rend quatorze images de contrôle.
 
-Les captures du guide Creality Print sont faites à la main dans l'interface, puis
-annotées.
+Les captures du guide Creality Print sont faites à la main dans l'interface (plein
+écran, fenêtre maximisée) et rangées dans `docs/images/creality/brut/` ; les cadres et
+légendes sont ajoutés par `scripts/annoter_captures.py`, qui écrit les versions
+française et anglaise. Pour une nouvelle capture, ajuster les coordonnées des cadres
+dans ce script.
 
 ## ESPHome
 
@@ -99,9 +107,10 @@ esphome config tardis_v8/esphome/chatiere-tardis.yaml
 
 Le dépôt ne contient que la V8 ; les itérations précédentes sont racontées dans
 [HISTORIQUE.md](HISTORIQUE.md).
-Git ignore les images intermédiaires (`montage_frames/`, `montage_legende/`), les
-sauvegardes `.blend1`, les journaux et les caches. Les modèles Blender, STL, 3MF,
-rendus, GIF et MP4 sont versionnés.
+
+Git ignore les images intermédiaires (`montage_frames/`, `montage_legende*/`), les
+secrets ESPHome (`secrets.yaml`), les sauvegardes `.blend1`, les journaux et les
+caches. Les modèles Blender, STL, 3MF, rendus, GIF et MP4 sont versionnés.
 
 Après une régénération, actualiser l'inventaire SHA-256 :
 
